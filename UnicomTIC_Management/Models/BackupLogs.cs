@@ -8,5 +8,8 @@ namespace UnicomTIC_Management.Models
 {
     internal class BackupLogs
     {
+        public int BackupID {  get; set; }
+        public string BackupDate { get; set; }
+        public string BackupPath { get; set; }
     }
 }

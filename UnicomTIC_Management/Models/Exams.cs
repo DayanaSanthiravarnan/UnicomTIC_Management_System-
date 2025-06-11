@@ -8,5 +8,9 @@ namespace UnicomTIC_Management.Models
 {
     internal class Exams
     {
+        public int ExamsID {  get; set; }
+        public string ExamsName { get; set; }
+        public int SubjectID { get; set; }
+        public string ExamDate { get; set; }
     }
 }

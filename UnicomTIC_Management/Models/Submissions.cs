@@ -8,5 +8,9 @@ namespace UnicomTIC_Management.Models
 {
     internal class Submissions
     {
+        public int SubmissionID { get; set; }
+        public int AssignmentID { get; set; }
+        public int StudentID { get; set; }
+        public string SubmittedAt { get; set; }
     }
 }

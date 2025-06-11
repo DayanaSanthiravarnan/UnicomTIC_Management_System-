@@ -8,5 +8,7 @@ namespace UnicomTIC_Management.Models
 {
     internal class AdmissionNumbers
     {
+        public int AdmissionNumberID { get; set; }
+        public int StudentID {  get; set; }
     }
 }

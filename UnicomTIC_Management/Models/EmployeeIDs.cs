@@ -8,5 +8,7 @@ namespace UnicomTIC_Management.Models
 {
     internal class EmployeeIDs
     {
+        public string EmployeeIDValue { get; set; }
+        public int UserID {  get; set; }
     }
 }

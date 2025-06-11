@@ -8,5 +8,12 @@ namespace UnicomTIC_Management.Models
 {
     internal class Notifications
     {
+        public  int NotificationID {  get; set; }
+        public string Title { get; set; }
+        public string Message { get; set; }
+        public string SentTo { get; set; }
+        public string SentAt { get; set; }
+
+
     }
 }

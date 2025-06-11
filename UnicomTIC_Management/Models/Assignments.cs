@@ -8,5 +8,10 @@ namespace UnicomTIC_Management.Models
 {
     internal class Assignments
     {
+        public int AssignmentID { get; set; }
+        public int SubjectID { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public string DueDate { get; set; }
     }
 }

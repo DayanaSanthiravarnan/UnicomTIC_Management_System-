@@ -8,5 +8,11 @@ namespace UnicomTIC_Management.Models
 {
     internal class Lectures
     {
+        public int LecturesID { get; set; }
+        public string Name { get; set; }
+        public string NIC { get; set; }
+        public string Address { get; set; }
+        public string Phone { get; set; }
+        public int DepartmentID { get; set; }
     }
 }

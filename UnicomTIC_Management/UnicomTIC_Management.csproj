@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -62,6 +62,26 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\AdmissionNumbers.cs" />
+    <Compile Include="Models\Assignments.cs" />
+    <Compile Include="Models\Attendance.cs" />
+    <Compile Include="Models\BackupLogs.cs" />
+    <Compile Include="Models\Complaints.cs" />
+    <Compile Include="Models\Courses.cs" />
+    <Compile Include="Models\Departments.cs" />
+    <Compile Include="Models\EmployeeIDs.cs" />
+    <Compile Include="Models\Exams.cs" />
+    <Compile Include="Models\LeaveRequests.cs" />
+    <Compile Include="Models\Lectures.cs" />
+    <Compile Include="Models\Marks.cs" />
+    <Compile Include="Models\Mentors.cs" />
+    <Compile Include="Models\Notifications.cs" />
+    <Compile Include="Models\Rooms.cs" />
+    <Compile Include="Models\Staff.cs" />
+    <Compile Include="Models\Subjects.cs" />
+    <Compile Include="Models\Submissions.cs" />
+    <Compile Include="Models\TimeTables.cs" />
+    <Compile Include="Models\TopPerformers.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Mappers\UserMapper.cs" />
     <Compile Include="Program.cs" />
@@ -89,7 +109,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include=".gitignore" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

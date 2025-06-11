@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace UnicomTIC_Management.Enums
 {
-    internal class User_enum
+    public enum User_enum
     {
+        Student,
+        lecturer,
+        Staff,
+        Admin,
+        Mentors
     }
 }
