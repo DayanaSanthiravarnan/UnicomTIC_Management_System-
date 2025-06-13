@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnicomTIC_Management.Controllers
 {
-    internal class LoginController
+    class LoginController
     {
     }
 }

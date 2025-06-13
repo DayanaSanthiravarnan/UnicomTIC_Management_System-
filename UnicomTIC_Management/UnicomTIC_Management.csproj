@@ -51,41 +51,60 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Datas\Dbconfig.cs" />
     <Compile Include="Datas\Migration.cs" />
-    <Compile Include="DTOs\User_Role.cs" />
-    <Compile Include="Enums\User_enum.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Models\DTOs\MainGroupDTO.cs" />
+    <Compile Include="Models\MainGroup.cs" />
+    <Compile Include="Repositories\Interfaces\IMainGroupRepository.cs" />
+    <Compile Include="Repositories\MainGroupRepository.cs" />
+    <Compile Include="Services\Interfaces\IMainGroupService.cs" />
+    <Compile Include="Services\MainGroupService.cs" />
+    <Compile Include="Utilities\MainGroupMapper.cs" />
+    <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Views\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\AdmissionNumbers.cs" />
-    <Compile Include="Models\Assignments.cs" />
+    <Compile Include="Models\AdmissionNumber.cs" />
+    <Compile Include="Models\Assignment.cs" />
     <Compile Include="Models\Attendance.cs" />
-    <Compile Include="Models\BackupLogs.cs" />
-    <Compile Include="Models\Complaints.cs" />
-    <Compile Include="Models\Courses.cs" />
-    <Compile Include="Models\Departments.cs" />
-    <Compile Include="Models\EmployeeIDs.cs" />
-    <Compile Include="Models\Exams.cs" />
-    <Compile Include="Models\LeaveRequests.cs" />
-    <Compile Include="Models\Lectures.cs" />
-    <Compile Include="Models\Marks.cs" />
-    <Compile Include="Models\Mentors.cs" />
-    <Compile Include="Models\Notifications.cs" />
-    <Compile Include="Models\Rooms.cs" />
+    <Compile Include="Models\BackupLog.cs" />
+    <Compile Include="Models\Complaint.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
+    <Compile Include="Models\DTOs\CourseDTO.cs" />
+    <Compile Include="Models\EmployeeID.cs" />
+    <Compile Include="Models\Enums\UserRole.cs" />
+    <Compile Include="Models\Exam.cs" />
+    <Compile Include="Models\LeaveRequest.cs" />
+    <Compile Include="Models\Lecture.cs" />
+    <Compile Include="Models\Mark.cs" />
+    <Compile Include="Models\Mentor.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\Room.cs" />
     <Compile Include="Models\Staff.cs" />
-    <Compile Include="Models\Subjects.cs" />
-    <Compile Include="Models\Submissions.cs" />
-    <Compile Include="Models\TimeTables.cs" />
-    <Compile Include="Models\TopPerformers.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\Submission.cs" />
+    <Compile Include="Models\TimeTable.cs" />
+    <Compile Include="Models\TopPerformer.cs" />
     <Compile Include="Models\User.cs" />
-    <Compile Include="Mappers\UserMapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CourseRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ICourseRepository.cs" />
+    <Compile Include="Services\CourseService.cs" />
+    <Compile Include="Services\Interfaces\ICourseService.cs" />
+    <Compile Include="Utilities\CourseMapper.cs" />
+    <Compile Include="Views\CourceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CourceForm.Designer.cs">
+      <DependentUpon>CourceForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -95,6 +114,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\CourceForm.resx">
+      <DependentUpon>CourceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -112,6 +134,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

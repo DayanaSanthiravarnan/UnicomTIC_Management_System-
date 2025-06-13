@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using UnicomTIC_Management.Datas;
+using UnicomTIC_Management.Views;
 
 namespace UnicomTIC_Management
 {
@@ -14,9 +16,12 @@ namespace UnicomTIC_Management
         [STAThread]
         static void Main()
         {
+            Migration.CreateTables();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            /*Application.Run(new Form1());*/
+
+            Application.Run(new CourceForm());
         }
     }
 }
