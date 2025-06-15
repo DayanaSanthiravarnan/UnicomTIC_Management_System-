@@ -59,7 +59,7 @@ namespace UnicomTIC_Management.Datas
                         SubjectID INTEGER PRIMARY KEY AUTOINCREMENT,
                         SubjectName TEXT NOT NULL UNIQUE,
                         CourseID INTEGER NOT NULL,
-                        Credits INTEGER,
+                        
                         FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
                     );
 
@@ -75,7 +75,7 @@ namespace UnicomTIC_Management.Datas
 
                     CREATE TABLE IF NOT EXISTS MainGroups (
                         MainGroupID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        GroupCode TEXT NOT NULL UNIQUE CHECK(GroupCode IN ('A','B')),
+                        GroupCode TEXT NOT NULL UNIQUE CHECK(GroupCode IN ('A','B','C','D','E','F')),
                         Description TEXT
                     );
 

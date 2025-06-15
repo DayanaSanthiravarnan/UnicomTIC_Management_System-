@@ -8,13 +8,12 @@ using UnicomTIC_Management.Models.DTOs;
 
 namespace UnicomTIC_Management.Services.Interfaces
 {
-    internal interface IMainGroupService 
+    internal interface IMainGroupService
     {
-        void AddMainGroup(MainGroupDTO MainGroupDTO);
-        void UpdateMainGroup(CourseDTO MainGroupDTO);
-        void DeleteMainGroup(int MainGroupId);
-        MainGroupDTO GetMainGroupById(int MainGroupId);
+        void AddMainGroup(MainGroupDTO mainGroupDTO);
+        void UpdateMainGroup(MainGroupDTO mainGroupDTO);
+        void DeleteMainGroup(int mainGroupId);
+        MainGroupDTO GetMainGroupById(int mainGroupId);
         List<MainGroupDTO> GetAllMainGroup();
-        
     }
 }

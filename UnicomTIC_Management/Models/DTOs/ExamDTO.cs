@@ -4,17 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UnicomTIC_Management.Models
+namespace UnicomTIC_Management.Models.DTOs
 {
-    internal class Exam
+    internal class ExamDTO
     {
-        public int ExamsID { get; set; }
-        public string ExamsName { get; set; }
+        
+        public int ExamID { get; set; }
+        public string ExamName { get; set; }
         public int SubjectID { get; set; }
         public string SubjectName { get; set; } 
         public string ExamDate { get; set; }
         public string ExamType { get; set; }
         public int MaxMarks { get; set; }
     }
-
 }
+

@@ -52,16 +52,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\ExamController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MainGroupController.cs" />
+    <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Datas\Dbconfig.cs" />
     <Compile Include="Datas\Migration.cs" />
+    <Compile Include="Models\DTOs\ExamDTO.cs" />
     <Compile Include="Models\DTOs\MainGroupDTO.cs" />
+    <Compile Include="Models\DTOs\SubjectDTO.cs" />
     <Compile Include="Models\MainGroup.cs" />
+    <Compile Include="Repositories\ExamRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IExamRepository.cs" />
     <Compile Include="Repositories\Interfaces\IMainGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISubjectRepository.cs" />
     <Compile Include="Repositories\MainGroupRepository.cs" />
+    <Compile Include="Repositories\SubjectRepository.cs" />
+    <Compile Include="Services\ExamService.cs" />
+    <Compile Include="Services\Interfaces\IExamService.cs" />
     <Compile Include="Services\Interfaces\IMainGroupService.cs" />
+    <Compile Include="Services\Interfaces\ISubjectService.cs" />
     <Compile Include="Services\MainGroupService.cs" />
+    <Compile Include="Services\SubjectService.cs" />
+    <Compile Include="Utilities\ExamMapper.cs" />
     <Compile Include="Utilities\MainGroupMapper.cs" />
+    <Compile Include="Utilities\SubjectMapper.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +120,18 @@
     <Compile Include="Views\CourceForm.Designer.cs">
       <DependentUpon>CourceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\MainGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainGroupForm.Designer.cs">
+      <DependentUpon>MainGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubjectForm.Designer.cs">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -116,6 +143,12 @@
     </Compile>
     <EmbeddedResource Include="Views\CourceForm.resx">
       <DependentUpon>CourceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainGroupForm.resx">
+      <DependentUpon>MainGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubjectForm.resx">
+      <DependentUpon>SubjectForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -132,7 +165,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
+    <Content Include="Views\.gitignore" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

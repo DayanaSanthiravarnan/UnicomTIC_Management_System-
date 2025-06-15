@@ -143,7 +143,7 @@ namespace UnicomTIC_Management.Views
                     LoadCourses();
                     ClearFields();
 
-                    //MessageBox.Show("Course deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                 }
             }
             catch (Exception ex)
