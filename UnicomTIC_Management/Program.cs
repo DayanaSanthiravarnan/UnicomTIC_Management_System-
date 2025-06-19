@@ -41,7 +41,7 @@ namespace UnicomTIC_Management
 
             //Application.Run(new StudentDetailsForm(studentController, courseController, mainGroupController));
             
-            Application.Run(new StudentRegiForm());
+            //Application.Run(new UserManagementForm ());
         }
     }
 }

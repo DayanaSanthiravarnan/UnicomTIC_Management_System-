@@ -11,6 +11,8 @@ namespace UnicomTIC_Management.Models.DTOs
         public int MainGroupID { get; set; }
         public string GroupCode { get; set; }
         public string Description { get; set; }
-
+        public int StudentID { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

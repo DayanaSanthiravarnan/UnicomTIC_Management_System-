@@ -30,13 +30,13 @@ namespace UnicomTIC_Management.Views
 
         // Constructor with parameters to inject controllers and pending user/student
         internal UserManagementForm(
-            UserController userController,
-            StudentController studentController,
-            MainGroupController mainGroupController,
-            //SubGroupController subGroupController,
-            SubjectController subjectController,
-            UserDTO user,
-            StudentDTO student)
+                 UserController userController,
+                 StudentController studentController,
+                 MainGroupController mainGroupController,
+                 //SubGroupController subGroupController,
+                 SubjectController subjectController,
+                 UserDTO user,
+                 StudentDTO student)
         {
             InitializeComponent();
 
@@ -50,46 +50,56 @@ namespace UnicomTIC_Management.Views
             _pendingStudent = student;
         }
 
-            private void btnApprove_Click(object sender, EventArgs e)
+        private void btnApprove_Click(object sender, EventArgs e)
         {
             try
             {
-                _userController.ApproveUser(_pendingUser.UserID);
+                // 1. Save User first and get UserID
+                int userId = _userController.CreateUser(_pendingUser); // CreateUser returns the saved UserID
 
-                if (_pendingUser.Role == UserRole.Student && _pendingStudent != null)
+                _pendingUser.UserID = userId;  // Assign generated UserID to UserDTO
+
+                // 2. Set Student's UserID and save Student
+                _pendingStudent.UserID = userId;
+                int studentId = _studentController.CreateStudent(_pendingStudent);
+                _pendingStudent.StudentID = studentId;
+
+                // 3. Mark User as Approved
+                _userController.ApproveUser(userId);
+
+                // 4. Mark Student as Approved (update status and save)
+                _pendingStudent.Status = UserStatus.Approved;
+                _studentController.UpdateStudent(_pendingStudent);
+
+                // 5. Create Main Group, Sub Group, and Subject for this student
+                var mainGroup = new MainGroupDTO
                 {
-                    _pendingStudent.Status = UserStatus.Approved;
-                    _studentController.UpdateStudent(_pendingStudent);
+                    StudentID = studentId,
+                    GroupCode = "Default Main Group",
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                };
+                int mainGroupId = _mainGroupController.CreateMainGroup(mainGroup);
 
-                    var mainGroup = new MainGroupDTO
-                    {
-                       // StudentID = _pendingStudent.StudentID,
-                       // GroupCode = "Default Main Group",
-                       // CreatedAt = DateTime.Now,
-                      //  UpdatedAt = DateTime.Now
-                    };
-                  //  int mainGroupId = _mainGroupController.CreateMainGroup(mainGroup);
+                var subGroup = new SubGroupDTO
+                {
+                    MainGroupID = mainGroupId,
+                    SubGroupName = "Default Sub Group",
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                };
+                int subGroupId = _subGroupController.CreateSubGroup(subGroup);
 
-                   // var subGroup = new SubGroupDTO
-                    {
-                        //MainGroupID = mainGroupId,
-                        //SubGroupName = "Default Sub Group",
-                        //CreatedAt = DateTime.Now,
-                        //UpdatedAt = DateTime.Now
-                    };
-                    //int subGroupId = _subGroupController.CreateSubGroup(subGroup);
+                var subject = new SubjectDTO
+                {
+                    StudentID = studentId,
+                    SubjectName = "Default Subject",
+                    CreatedAt = DateTime.Now,
+                    UpdatedAt = DateTime.Now
+                };
+                _subjectController.CreateSubject(subject);
 
-                   // var subject = new SubjectDTO
-                    //{
-                        //StudentID = _pendingStudent.StudentID,
-                        //SubjectName = "Default Subject",
-                        //CreatedAt = DateTime.Now,
-                        //UpdatedAt = DateTime.Now
-                    //};
-                    //_subjectController.CreateSubject(subject);
-                }
-
-                MessageBox.Show("User approved and related data created.");
+                MessageBox.Show("User approved, student created and assigned groups & subjects.");
                 this.Close();
             }
             catch (Exception ex)

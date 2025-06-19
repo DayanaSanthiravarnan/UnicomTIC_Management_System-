@@ -77,7 +77,7 @@ namespace UnicomTIC_Management.Views
                     Username = txtUsername.Text.Trim(),
                     Password = txtPassword.Text.Trim(),
                     Role = UserRole.Student,
-                    Status = UserStatus.Pending,   
+                    Status = UserStatus.Pending,
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now
                 };
@@ -93,16 +93,32 @@ namespace UnicomTIC_Management.Views
                     Gender = cmbGender.SelectedItem?.ToString(),
                     CourseID = (int)cmbCourse.SelectedValue,
                     EnrollmentDate = DateTime.Now,
-                    Status = StudentStatus.Pending,  
+                    Status = UserStatus.Pending,
                     CreatedAt = DateTime.Now,
                     UpdatedAt = DateTime.Now
                 };
 
-                // Pass data to UserManagementForm for admin approval
-                var userManagementForm = new UserManagementForm(user, student);
-                userManagementForm.Show();
+                // Initialize all controllers here to pass to UserManagementForm
+                var userController = new UserController(new UserService(new UserRepository()));
+                var studentController = new StudentController(new StudentService(new StudentRepository()));
+                var mainGroupController = new MainGroupController(new MainGroupService(new MainGroupRepository()));
+                //var subGroupController = new SubGroupController(new SubGroupService(new SubGroupRepository()));
+                var subjectController = new SubjectController(new SubjectService(new SubjectRepository()));
 
+                var userManagementForm = new UserManagementForm(
+                    userController,
+                    studentController,
+                    mainGroupController,
+                    //subGroupController,
+                    subjectController,
+                    user,
+                    student);
+
+                userManagementForm.Show();
                 this.Close();
+
+                // Pass data to UserManagementForm for admin approval
+              
             }
             catch (Exception ex)
             {
