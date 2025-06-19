@@ -15,6 +15,7 @@ namespace UnicomTIC_Management.Repositories.Interfaces
             void DeleteSubject(int subjectId);
             Subject GetSubjectById(int subjectId);
             List<Subject> GetAllSubjects();
-        }
+            List<Subject> GetSubjectsByCourseId(int courseId);
+    }
     
 }

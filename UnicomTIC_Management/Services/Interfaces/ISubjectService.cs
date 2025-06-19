@@ -14,5 +14,6 @@ namespace UnicomTIC_Management.Services.Interfaces
         void DeleteSubject(int subjectId);
         SubjectDTO GetSubjectById(int subjectId);
         List<SubjectDTO> GetAllSubjects();
+        List<SubjectDTO> GetSubjectsByCourseId(int courseId);
     }
 }

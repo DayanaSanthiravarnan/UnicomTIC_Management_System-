@@ -10,11 +10,14 @@ namespace UnicomTIC_Management.Models
     
         internal class User
         {
-            public int UserID { get; set; }
-            public string Username { get; set; }
-            public string Password { get; set; }
-            public string NIC { get; set; }
-            public UserRole Role { get; set; }           
-        }
+    public int UserID { get; set; }
+    public string Username { get; set; }
+    public string Password { get; set; }
+    public string NIC { get; set; }
+    public UserRole Role { get; set; }
+    public UserStatus Status { get; set; }
+    public DateTime CreatedAt { get; set; }
+    public DateTime UpdatedAt { get; set; }
+    }
     
 }

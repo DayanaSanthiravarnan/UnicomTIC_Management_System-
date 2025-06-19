@@ -110,6 +110,7 @@
             this.comboBoxCourses.Name = "comboBoxCourses";
             this.comboBoxCourses.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCourses.TabIndex = 9;
+            this.comboBoxCourses.SelectedIndexChanged += new System.EventHandler(this.comboBoxCourses_SelectedIndexChanged);
             // 
             // SubjectForm
             // 

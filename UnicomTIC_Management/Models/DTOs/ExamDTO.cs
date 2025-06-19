@@ -16,6 +16,7 @@ namespace UnicomTIC_Management.Models.DTOs
         public string ExamDate { get; set; }
         public string ExamType { get; set; }
         public int MaxMarks { get; set; }
+        public int CourseID { get; set; }
     }
 }
 

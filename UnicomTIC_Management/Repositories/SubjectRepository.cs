@@ -146,5 +146,34 @@ namespace UnicomTIC_Management.Repositories
             }
             return subjects;
         }
+        public List<Subject> GetSubjectsByCourseId(int courseId)
+        {
+            var subjects = new List<Subject>();
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = @"
+            SELECT s.SubjectID, s.SubjectName, s.CourseID, c.CourseName
+            FROM Subjects s
+            LEFT JOIN Courses c ON s.CourseID = c.CourseID
+            WHERE s.CourseID = @CourseID";
+                cmd.Parameters.AddWithValue("@CourseID", courseId);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        subjects.Add(new Subject
+                        {
+                            SubjectID = reader.GetInt32(0),
+                            SubjectName = reader.GetString(1),
+                            CourseID = reader.GetInt32(2),
+                            CourseName = reader.GetString(3)
+                        });
+                    }
+                }
+            }
+            return subjects;
+        }
     }
 }

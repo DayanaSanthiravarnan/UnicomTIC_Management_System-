@@ -52,31 +52,68 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\ExamController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MainGroupController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Datas\Dbconfig.cs" />
     <Compile Include="Datas\Migration.cs" />
+    <Compile Include="Models\DTOs\DepartmentDTO.cs" />
     <Compile Include="Models\DTOs\ExamDTO.cs" />
+    <Compile Include="Models\DTOs\LecturerDTO.cs" />
     <Compile Include="Models\DTOs\MainGroupDTO.cs" />
+    <Compile Include="Models\DTOs\MarkDTO.cs" />
+    <Compile Include="Models\DTOs\StudentDTO.cs" />
     <Compile Include="Models\DTOs\SubjectDTO.cs" />
+    <Compile Include="Models\DTOs\UserDTO.cs" />
+    <Compile Include="Models\Enums\UserStatus.cs" />
     <Compile Include="Models\MainGroup.cs" />
+    <Compile Include="Repositories\DepartmentRepository.cs" />
     <Compile Include="Repositories\ExamRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IDepartmentRepository.cs" />
     <Compile Include="Repositories\Interfaces\IExamRepository.cs" />
     <Compile Include="Repositories\Interfaces\IMainGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IStudentRepository.cs" />
     <Compile Include="Repositories\Interfaces\ISubjectRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IUserRepository.cs" />
     <Compile Include="Repositories\MainGroupRepository.cs" />
+    <Compile Include="Repositories\StudentRepository.cs" />
     <Compile Include="Repositories\SubjectRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Services\DepartmentService.cs" />
     <Compile Include="Services\ExamService.cs" />
+    <Compile Include="Services\Interfaces\IDepartmentService.cs" />
     <Compile Include="Services\Interfaces\IExamService.cs" />
     <Compile Include="Services\Interfaces\IMainGroupService.cs" />
+    <Compile Include="Services\Interfaces\IStudentService.cs" />
     <Compile Include="Services\Interfaces\ISubjectService.cs" />
+    <Compile Include="Services\Interfaces\IUserService.cs" />
     <Compile Include="Services\MainGroupService.cs" />
+    <Compile Include="Services\StudentService.cs" />
     <Compile Include="Services\SubjectService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Utilities\DepartmentMapper.cs" />
     <Compile Include="Utilities\ExamMapper.cs" />
+    <Compile Include="Utilities\LecturerMapper.cs" />
     <Compile Include="Utilities\MainGroupMapper.cs" />
+    <Compile Include="Utilities\StudentMapper.cs" />
     <Compile Include="Utilities\SubjectMapper.cs" />
+    <Compile Include="Utilities\UserMapper.cs" />
+    <Compile Include="Views\DepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DepartmentForm.Designer.cs">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExamForm.Designer.cs">
+      <DependentUpon>ExamForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,7 +132,7 @@
     <Compile Include="Models\Enums\UserRole.cs" />
     <Compile Include="Models\Exam.cs" />
     <Compile Include="Models\LeaveRequest.cs" />
-    <Compile Include="Models\Lecture.cs" />
+    <Compile Include="Models\Lecturer.cs" />
     <Compile Include="Models\Mark.cs" />
     <Compile Include="Models\Mentor.cs" />
     <Compile Include="Models\Notification.cs" />
@@ -126,11 +163,35 @@
     <Compile Include="Views\MainGroupForm.Designer.cs">
       <DependentUpon>MainGroupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\StudentDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentDetailsForm.Designer.cs">
+      <DependentUpon>StudentDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentRegiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentRegiForm.Designer.cs">
+      <DependentUpon>StudentRegiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\SubjectForm.Designer.cs">
       <DependentUpon>SubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserDetailsForm.Designer.cs">
+      <DependentUpon>UserDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserManagementForm.Designer.cs">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -144,11 +205,29 @@
     <EmbeddedResource Include="Views\CourceForm.resx">
       <DependentUpon>CourceForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\DepartmentForm.resx">
+      <DependentUpon>DepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExamForm.resx">
+      <DependentUpon>ExamForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainGroupForm.resx">
       <DependentUpon>MainGroupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentDetailsForm.resx">
+      <DependentUpon>StudentDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentRegiForm.resx">
+      <DependentUpon>StudentRegiForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SubjectForm.resx">
       <DependentUpon>SubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserDetailsForm.resx">
+      <DependentUpon>UserDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserManagementForm.resx">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

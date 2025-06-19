@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Models.Enums;
+using UnicomTIC_Management.Services.Interfaces;
+
+namespace UnicomTIC_Management.Controllers
+{
+    public class UserController
+    {
+
+        private readonly IUserService _userService;
+
+        internal UserController(IUserService userService)  // public constructor
+        {
+            _userService = userService;
+        }
+        // Create user after validating admin credentials
+        public int CreateUser(string adminUsername, string adminPassword, UserDTO newUser)
+        {
+            var adminUser = _userService.ValidateUser(adminUsername, adminPassword);
+            if (adminUser == null || adminUser.Role != Models.Enums.UserRole.Admin)
+            {
+                throw new UnauthorizedAccessException("Only admin users can create new users.");
+            }
+
+            int newUserId = _userService.AddUser(newUser);
+            Console.WriteLine($"User created successfully with UserID: {newUserId}");
+            return newUserId;
+        }
+        public void UpdateUser(UserDTO userDTO)
+        {
+            _userService.UpdateUser(userDTO);
+            Console.WriteLine($"User with ID {userDTO.UserID} updated.");
+        }
+
+        public void DeleteUser(int userId)
+        {
+            _userService.DeleteUser(userId);
+            Console.WriteLine($"User with ID {userId} deleted.");
+        }
+
+        public UserDTO GetUser(int userId)
+        {
+            return _userService.GetUserById(userId);
+        }
+
+        public List<UserDTO> GetAllUsers()
+        {
+            return _userService.GetAllUsers();
+        }
+        public void ApproveUser(int userId)
+        {
+            _userService.ApproveUser(userId);
+        }
+
+        public void RejectUser(int userId)
+        {
+            _userService.RejectUser(userId);
+        }
+    }
+}
+
+
+        
+            
+
+        

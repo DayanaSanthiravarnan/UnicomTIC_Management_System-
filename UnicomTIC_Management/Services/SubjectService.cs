@@ -14,7 +14,9 @@ namespace UnicomTIC_Management.Services
         public SubjectService(ISubjectRepository subjectRepository)
         {
             _subjectRepository = subjectRepository;
+            
         }
+
 
         public void AddSubject(SubjectDTO subjectDTO)
         {
@@ -50,5 +52,11 @@ namespace UnicomTIC_Management.Services
             var subjects = _subjectRepository.GetAllSubjects();
             return SubjectMapper.ToDTOList(subjects);
         }
+        public List<SubjectDTO> GetSubjectsByCourseId(int courseId)
+        {
+            var subjects = _subjectRepository.GetSubjectsByCourseId(courseId);
+            return SubjectMapper.ToDTOList(subjects);
+        }
+
     }
 }

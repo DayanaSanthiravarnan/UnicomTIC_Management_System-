@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Services;
 using UnicomTIC_Management.Services.Interfaces;
 
 namespace UnicomTIC_Management.Controllers
@@ -65,6 +66,10 @@ namespace UnicomTIC_Management.Controllers
         public List<SubjectDTO> GetAllSubjects()
         {
             return _service.GetAllSubjects();
+        }
+        public List<SubjectDTO> GetSubjectsByCourseId(int courseId)
+        {
+            return _service.GetSubjectsByCourseId(courseId);
         }
     }
 }

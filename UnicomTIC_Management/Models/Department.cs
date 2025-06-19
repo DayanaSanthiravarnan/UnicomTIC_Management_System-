@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace UnicomTIC_Management.Models
 {
-    internal class Department
+    
+    public class Department
     {
-        public int DepartmentID {get; set;}
-        public string DepartmentName {get; set;}    
-
+        public int DepartmentID { get; set; }
+        public string DepartmentName { get; set; }
     }
 }

@@ -204,5 +204,10 @@ namespace UnicomTIC_Management.Views
                 }
             }
         }
+
+        private void comboBoxCourses_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

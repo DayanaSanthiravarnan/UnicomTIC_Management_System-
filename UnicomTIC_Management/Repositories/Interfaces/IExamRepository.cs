@@ -14,5 +14,6 @@ namespace UnicomTIC_Management.Repositories.Interfaces
         void DeleteExam(int examId);
         Exam GetExamById(int examId);
         List<Exam> GetAllExams();
+        
     }
 }

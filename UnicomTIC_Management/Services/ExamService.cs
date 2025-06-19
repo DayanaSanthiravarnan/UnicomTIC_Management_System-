@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Repositories;
 using UnicomTIC_Management.Repositories.Interfaces;
 using UnicomTIC_Management.Services.Interfaces;
 using UnicomTIC_Management.Utilities;
@@ -14,10 +15,12 @@ namespace UnicomTIC_Management.Services
     internal class ExamService : IExamService
     {
         private readonly IExamRepository _repository;
+        private readonly ISubjectService _subjectService;
 
-        public ExamService(IExamRepository repository)
+        public ExamService(IExamRepository repository, ISubjectService subjectService)
         {
             _repository = repository;
+            _subjectService = subjectService;
         }
 
         public void AddExam(ExamDTO examDTO)
@@ -60,5 +63,11 @@ namespace UnicomTIC_Management.Services
             var exams = _repository.GetAllExams();
             return ExamMapper.ToDTOList(exams);
         }
+
+        public List<SubjectDTO> GetSubjectsByCourseId(int courseId)
+        {
+            return _subjectService.GetSubjectsByCourseId(courseId);
+        }
     }
+
 }

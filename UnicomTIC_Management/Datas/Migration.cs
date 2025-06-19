@@ -29,12 +29,12 @@ namespace UnicomTIC_Management.Datas
                         Username TEXT NOT NULL UNIQUE,
                         Password TEXT NOT NULL,
                         NIC TEXT NOT NULL UNIQUE,
-                        CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                        UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                        Role TEXT NOT NULL DEFAULT 'Student', -- e.g., 'Student', 'Lecturer', 'Staff', 'Admin', 'Mentor'
-                        FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
+                        CreatedAt TEXT NOT NULL DEFAULT (datetime('now')),
+                        UpdatedAt TEXT NOT NULL DEFAULT (datetime('now')),
+                        Role TEXT NOT NULL CHECK (Role IN ('Student', 'Lecturer', 'Staff', 'Admin', 'Mentor')),
+                        Status TEXT NOT NULL DEFAULT 'Pending' CHECK (Status IN ('Pending', 'Approved', 'Rejected')),
+                        FOREIGN KEY (NIC) REFERENCES NICDetails(NIC) ON DELETE CASCADE
                     );
-
                     CREATE TABLE IF NOT EXISTS ActivityLogs (
                         LogID INTEGER PRIMARY KEY AUTOINCREMENT,
                         UserID INTEGER,
@@ -166,7 +166,7 @@ namespace UnicomTIC_Management.Datas
                         Address TEXT,
                         Email TEXT,
                         DepartmentID INTEGER,
-                        HireDate TEXT,
+                        
                         UserID INTEGER UNIQUE NOT NULL,
                         CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Renamed from RegisteredAt
                         UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,

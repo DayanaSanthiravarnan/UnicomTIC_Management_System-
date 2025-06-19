@@ -47,5 +47,15 @@ namespace UnicomTIC_Management.Utilities
         {
             return subjectDTOs?.Select(ToEntity).ToList() ?? new List<Subject>();
         }
+        public static List<SubjectDTO> ToDTOList(List<Subject> subjects)
+        {
+            return subjects.Select(s => new SubjectDTO
+            {
+                SubjectID = s.SubjectID,
+                SubjectName = s.SubjectName,
+                CourseID = s.CourseID,
+                CourseName = s.CourseName
+            }).ToList();
+        }
     }
 }
