@@ -10,10 +10,11 @@ namespace UnicomTIC_Management.Repositories.Interfaces
 {
     public interface IStudentRepository
     {
-        void AddStudent(Student student);
+        int CreateStudent(Student student);
         void UpdateStudent(Student student);
         void DeleteStudent(int studentId);
         Student GetStudentById(int studentId);
         List<Student> GetAllStudents();
+
     }
 }

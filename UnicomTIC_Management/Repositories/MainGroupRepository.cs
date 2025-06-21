@@ -143,6 +143,18 @@ namespace UnicomTIC_Management.Repositories
             }
             return mainGroup;
         }
+        public int CreateMainGroup(MainGroup entity)
+        {
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = "INSERT INTO MainGroups (GroupCode, GroupName, Description) VALUES (@GroupCode, @GroupName, @Description); SELECT last_insert_rowid();";
+                cmd.Parameters.AddWithValue("@GroupCode", entity.GroupCode);
+                cmd.Parameters.AddWithValue("@GroupName", entity.GroupCode);
+                cmd.Parameters.AddWithValue("@Description", entity.Description ?? (object)DBNull.Value);
+                return Convert.ToInt32(cmd.ExecuteScalar());
+            }
+        }
 
     }
 }

@@ -81,7 +81,10 @@ namespace UnicomTIC_Management.Controllers
             }
         }
 
-       
+        public int CreateMainGroup(MainGroupDTO dto)
+        {
+            return _mainGroupService.CreateMainGroup(dto);
+        }
     }
 }
 

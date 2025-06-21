@@ -18,15 +18,15 @@ namespace UnicomTIC_Management.Repositories
                 {
                     var cmd = conn.CreateCommand();
                     cmd.CommandText = @"
-                        INSERT INTO Users (Username, Password, NIC, Role, Status)
-                        VALUES (@Username, @Password, @NIC, @Role, @Status);
+                        INSERT INTO Users (Username, Password, NIC, Role)
+                        VALUES (@Username, @Password, @NIC, @Role);
                         SELECT last_insert_rowid();";
 
                     cmd.Parameters.AddWithValue("@Username", user.Username);
                     cmd.Parameters.AddWithValue("@Password", user.Password);
                     cmd.Parameters.AddWithValue("@NIC", user.NIC);
                     cmd.Parameters.AddWithValue("@Role", user.Role.ToString());
-                    cmd.Parameters.AddWithValue("@Status", user.Status);
+                   
 
                     long id = (long)cmd.ExecuteScalar();
                     return (int)id;

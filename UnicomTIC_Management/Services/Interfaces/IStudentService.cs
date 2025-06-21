@@ -10,8 +10,8 @@ namespace UnicomTIC_Management.Services.Interfaces
 {
     public interface IStudentService
     {
-        void AddStudent(StudentDTO student);
-        void UpdateStudent(StudentDTO student);
+        int AddStudent(StudentDTO studentDTO);
+        void UpdateStudent(StudentDTO studentDTO);
         void DeleteStudent(int studentId);
         StudentDTO GetStudentById(int studentId);
         List<StudentDTO> GetAllStudents();

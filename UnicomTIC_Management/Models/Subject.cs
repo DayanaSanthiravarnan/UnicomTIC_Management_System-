@@ -8,6 +8,7 @@ namespace UnicomTIC_Management.Models
 {
     internal class Subject
     {
+        public int StudentId { get; set; }
         public int SubjectID { get; set; }
         public string SubjectName { get; set; }
         public int CourseID { get; set; }

@@ -33,7 +33,7 @@ namespace UnicomTIC_Management.Services
             if (!Enum.IsDefined(typeof(UserRole), userDTO.Role))
                 throw new ArgumentException("Invalid user role.");
 
-            userDTO.Status = UserStatus.Pending; // default status
+            userDTO.Status = UserStatus.Pending; 
 
             var user = UserMapper.ToEntity(userDTO);
             return _repository.AddUser(user);

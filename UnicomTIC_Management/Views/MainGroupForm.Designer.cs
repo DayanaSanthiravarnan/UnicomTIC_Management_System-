@@ -126,6 +126,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainGroupForm";
             this.Text = "MainGroupForm";
+            this.Load += new System.EventHandler(this.MainGroupForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

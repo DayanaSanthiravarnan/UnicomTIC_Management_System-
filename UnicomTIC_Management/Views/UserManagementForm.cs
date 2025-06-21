@@ -22,56 +22,49 @@ namespace UnicomTIC_Management.Views
         private readonly UserController _userController;
         private readonly StudentController _studentController;
         private readonly MainGroupController _mainGroupController;
-        //private readonly SubGroupController _subGroupController;
+        private readonly SubGroupController _subGroupController;
         private readonly SubjectController _subjectController;
 
         private readonly UserDTO _pendingUser;
         private readonly StudentDTO _pendingStudent;
 
-        // Constructor with parameters to inject controllers and pending user/student
+
         internal UserManagementForm(
-                 UserController userController,
-                 StudentController studentController,
-                 MainGroupController mainGroupController,
-                 //SubGroupController subGroupController,
-                 SubjectController subjectController,
-                 UserDTO user,
-                 StudentDTO student)
+           UserController userController,
+           StudentController studentController,
+           MainGroupController mainGroupController,
+           SubGroupController subGroupController,
+           SubjectController subjectController,
+           UserDTO user,
+           StudentDTO student)
         {
             InitializeComponent();
 
             _userController = userController;
             _studentController = studentController;
             _mainGroupController = mainGroupController;
-            //_subGroupController = subGroupController;
+            _subGroupController = subGroupController;
             _subjectController = subjectController;
 
             _pendingUser = user;
             _pendingStudent = student;
         }
-
         private void btnApprove_Click(object sender, EventArgs e)
         {
             try
             {
-                // 1. Save User first and get UserID
-                int userId = _userController.CreateUser(_pendingUser); // CreateUser returns the saved UserID
+                int userId = _userController.CreateUser(_pendingUser);
+                _pendingUser.UserID = userId;
 
-                _pendingUser.UserID = userId;  // Assign generated UserID to UserDTO
-
-                // 2. Set Student's UserID and save Student
                 _pendingStudent.UserID = userId;
-                int studentId = _studentController.CreateStudent(_pendingStudent);
+                int studentId = _studentController.AddStudent(_pendingStudent);
                 _pendingStudent.StudentID = studentId;
 
-                // 3. Mark User as Approved
                 _userController.ApproveUser(userId);
 
-                // 4. Mark Student as Approved (update status and save)
                 _pendingStudent.Status = UserStatus.Approved;
                 _studentController.UpdateStudent(_pendingStudent);
 
-                // 5. Create Main Group, Sub Group, and Subject for this student
                 var mainGroup = new MainGroupDTO
                 {
                     StudentID = studentId,
@@ -84,20 +77,16 @@ namespace UnicomTIC_Management.Views
                 var subGroup = new SubGroupDTO
                 {
                     MainGroupID = mainGroupId,
-                    SubGroupName = "Default Sub Group",
-                    CreatedAt = DateTime.Now,
-                    UpdatedAt = DateTime.Now
+                    SubGroupName = "Default Sub Group"
                 };
                 int subGroupId = _subGroupController.CreateSubGroup(subGroup);
 
                 var subject = new SubjectDTO
                 {
-                    StudentID = studentId,
-                    SubjectName = "Default Subject",
-                    CreatedAt = DateTime.Now,
-                    UpdatedAt = DateTime.Now
+                    StudentId = studentId,
+                    SubjectName = "Default Subject"
                 };
-                _subjectController.CreateSubject(subject);
+                _subjectController.AddSubject(subject);
 
                 MessageBox.Show("User approved, student created and assigned groups & subjects.");
                 this.Close();
@@ -110,22 +99,20 @@ namespace UnicomTIC_Management.Views
 
         private void UserManagementForm_Load(object sender, EventArgs e)
         {
-            {
-                lblUsername.Text = _pendingUser.Username;
-                lblRole.Text = _pendingUser.Role.ToString();
-                lblStatus.Text = _pendingUser.Status.ToString();
+            lblUsername.Text = _pendingUser.Username;
+            lblRole.Text = _pendingUser.Role.ToString();
+            lblStatus.Text = _pendingUser.Status.ToString();
 
-                if (_pendingUser.Role == UserRole.Student && _pendingStudent != null)
-                {
-                    pnlStudentInfo.Visible = true;
-                    lblStudentName.Text = _pendingStudent.Name;
-                    lblCourse.Text = GetCourseName(_pendingStudent.CourseID);
-                    lblStudentStatus.Text = _pendingStudent.Status.ToString();
-                }
-                else
-                {
-                    pnlStudentInfo.Visible = false;
-                }
+            if (_pendingUser.Role == UserRole.Student && _pendingStudent != null)
+            {
+                pnlStudentInfo.Visible = true;
+                lblStudentName.Text = _pendingStudent.Name;
+                lblCourse.Text = GetCourseName(_pendingStudent.CourseID);
+                lblStudentStatus.Text = _pendingStudent.Status.ToString();
+            }
+            else
+            {
+                pnlStudentInfo.Visible = false;
             }
         }
         private string GetCourseName(int courseId)

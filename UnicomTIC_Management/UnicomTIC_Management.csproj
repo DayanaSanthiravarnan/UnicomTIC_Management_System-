@@ -54,9 +54,14 @@
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\ExamController.cs" />
+    <Compile Include="Controllers\LecturerController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MainGroupController.cs" />
+    <Compile Include="Controllers\NICDetailController.cs" />
+    <Compile Include="Controllers\RoomController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\SubGroupController.cs" />
     <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Datas\Dbconfig.cs" />
@@ -66,40 +71,71 @@
     <Compile Include="Models\DTOs\LecturerDTO.cs" />
     <Compile Include="Models\DTOs\MainGroupDTO.cs" />
     <Compile Include="Models\DTOs\MarkDTO.cs" />
+    <Compile Include="Models\DTOs\NICDetailDTO.cs" />
+    <Compile Include="Models\DTOs\RoomDTO.cs" />
+    <Compile Include="Models\DTOs\StaffDTO.cs" />
     <Compile Include="Models\DTOs\StudentDTO.cs" />
+    <Compile Include="Models\DTOs\SubGroupDTO.cs" />
     <Compile Include="Models\DTOs\SubjectDTO.cs" />
     <Compile Include="Models\DTOs\UserDTO.cs" />
     <Compile Include="Models\Enums\UserStatus.cs" />
     <Compile Include="Models\MainGroup.cs" />
+    <Compile Include="Models\NICDetail.cs" />
+    <Compile Include="Models\SubGroup.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Repositories\DepartmentRepository.cs" />
     <Compile Include="Repositories\ExamRepository.cs" />
     <Compile Include="Repositories\Interfaces\IDepartmentRepository.cs" />
     <Compile Include="Repositories\Interfaces\IExamRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ILecturerRepository.cs" />
     <Compile Include="Repositories\Interfaces\IMainGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\INICDetailRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IRoomRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IStaffRepository.cs" />
     <Compile Include="Repositories\Interfaces\IStudentRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ISubGroupRepository.cs" />
     <Compile Include="Repositories\Interfaces\ISubjectRepository.cs" />
     <Compile Include="Repositories\Interfaces\IUserRepository.cs" />
+    <Compile Include="Repositories\LecturerRepository.cs" />
     <Compile Include="Repositories\MainGroupRepository.cs" />
+    <Compile Include="Repositories\NICDetailRepository.cs" />
+    <Compile Include="Repositories\RoomRepository.cs" />
+    <Compile Include="Repositories\StaffRepository.cs" />
     <Compile Include="Repositories\StudentRepository.cs" />
+    <Compile Include="Repositories\SubGroupRepository.cs" />
     <Compile Include="Repositories\SubjectRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="Services\DepartmentService.cs" />
     <Compile Include="Services\ExamService.cs" />
     <Compile Include="Services\Interfaces\IDepartmentService.cs" />
     <Compile Include="Services\Interfaces\IExamService.cs" />
+    <Compile Include="Services\Interfaces\ILecturerService.cs" />
     <Compile Include="Services\Interfaces\IMainGroupService.cs" />
+    <Compile Include="Services\Interfaces\INICDetailService.cs" />
+    <Compile Include="Services\Interfaces\IRoomService.cs" />
+    <Compile Include="Services\Interfaces\IStaffService.cs" />
     <Compile Include="Services\Interfaces\IStudentService.cs" />
+    <Compile Include="Services\Interfaces\ISubGroupService.cs" />
     <Compile Include="Services\Interfaces\ISubjectService.cs" />
     <Compile Include="Services\Interfaces\IUserService.cs" />
+    <Compile Include="Services\LecturerService.cs" />
     <Compile Include="Services\MainGroupService.cs" />
+    <Compile Include="Services\NICDetailService.cs" />
+    <Compile Include="Services\RoomService.cs" />
+    <Compile Include="Services\StaffService.cs" />
     <Compile Include="Services\StudentService.cs" />
+    <Compile Include="Services\SubGroupService.cs" />
     <Compile Include="Services\SubjectService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Utilities\DepartmentMapper.cs" />
     <Compile Include="Utilities\ExamMapper.cs" />
     <Compile Include="Utilities\LecturerMapper.cs" />
     <Compile Include="Utilities\MainGroupMapper.cs" />
+    <Compile Include="Utilities\NICDetailMapper.cs" />
+    <Compile Include="Utilities\RoomMapper.cs" />
+    <Compile Include="Utilities\StaffMapper.cs" />
     <Compile Include="Utilities\StudentMapper.cs" />
+    <Compile Include="Utilities\SubGroupMapper.cs" />
     <Compile Include="Utilities\SubjectMapper.cs" />
     <Compile Include="Utilities\UserMapper.cs" />
     <Compile Include="Views\DepartmentForm.cs">
@@ -157,11 +193,47 @@
     <Compile Include="Views\CourceForm.Designer.cs">
       <DependentUpon>CourceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LecturerRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LecturerRegistrationForm.Designer.cs">
+      <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainGroupForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\MainGroupForm.Designer.cs">
       <DependentUpon>MainGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NICRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NICRegistrationForm.Designer.cs">
+      <DependentUpon>NICRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoleSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RoleSelectForm.Designer.cs">
+      <DependentUpon>RoleSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RoomManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\RoomManagementForm.Designer.cs">
+      <DependentUpon>RoomManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffRegiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StaffRegiForm.Designer.cs">
+      <DependentUpon>StaffRegiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\StudentDetailsForm.cs">
       <SubType>Form</SubType>
@@ -174,6 +246,12 @@
     </Compile>
     <Compile Include="Views\StudentRegiForm.Designer.cs">
       <DependentUpon>StudentRegiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubGroupForm.Designer.cs">
+      <DependentUpon>SubGroupForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SubjectForm.cs">
       <SubType>Form</SubType>
@@ -211,14 +289,35 @@
     <EmbeddedResource Include="Views\ExamForm.resx">
       <DependentUpon>ExamForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\LecturerRegistrationForm.resx">
+      <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainGroupForm.resx">
       <DependentUpon>MainGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NICRegistrationForm.resx">
+      <DependentUpon>NICRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoleSelectForm.resx">
+      <DependentUpon>RoleSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\RoomManagementForm.resx">
+      <DependentUpon>RoomManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StaffRegiForm.resx">
+      <DependentUpon>StaffRegiForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StudentDetailsForm.resx">
       <DependentUpon>StudentDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StudentRegiForm.resx">
       <DependentUpon>StudentRegiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubGroupForm.resx">
+      <DependentUpon>SubGroupForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SubjectForm.resx">
       <DependentUpon>SubjectForm.cs</DependentUpon>
@@ -229,6 +328,8 @@
     <EmbeddedResource Include="Views\UserManagementForm.resx">
       <DependentUpon>UserManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\UnicomticManagementDB.db" />
+    <None Include="bin\Debug\UnicomTIC_Management.exe.config" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -244,9 +345,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\System.Data.SQLite.dll" />
+    <Content Include="bin\Debug\System.Data.SQLite.xml" />
+    <Content Include="bin\Debug\UnicomTIC_Management.exe" />
+    <Content Include="bin\Debug\UnicomTIC_Management.pdb" />
+    <Content Include="bin\Debug\x64\SQLite.Interop.dll" />
+    <Content Include="bin\Debug\x86\SQLite.Interop.dll" />
     <Content Include="Views\.gitignore" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

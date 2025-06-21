@@ -15,5 +15,6 @@ namespace UnicomTIC_Management.Services.Interfaces
         void DeleteMainGroup(int mainGroupId);
         MainGroupDTO GetMainGroupById(int mainGroupId);
         List<MainGroupDTO> GetAllMainGroup();
+        int CreateMainGroup(MainGroupDTO dto);
     }
 }

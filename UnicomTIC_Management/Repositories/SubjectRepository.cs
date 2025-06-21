@@ -175,5 +175,21 @@ namespace UnicomTIC_Management.Repositories
             }
             return subjects;
         }
+        public int CreateSubject(Subject subject)
+        {
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = @"INSERT INTO Subjects (CourseID, SubjectName) 
+                            VALUES (@CourseID, @SubjectName);
+                            SELECT last_insert_rowid();";
+                cmd.Parameters.AddWithValue("@CourseID", subject.CourseID);
+                
+                cmd.Parameters.AddWithValue("@SubjectName", subject.SubjectName);
+                
+
+                return Convert.ToInt32(cmd.ExecuteScalar());
+            }
+        }
     }
 }

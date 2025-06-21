@@ -15,5 +15,6 @@ namespace UnicomTIC_Management.Repositories.Interfaces
         void DeleteMainGroup(int MainGroupId);
         MainGroup GetMainGroupById(int MainGroupId);
         List<MainGroup> GetAllMainGroup();
+        int CreateMainGroup(MainGroup entity);
     }
 }

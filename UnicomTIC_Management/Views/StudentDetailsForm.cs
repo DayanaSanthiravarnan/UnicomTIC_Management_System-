@@ -407,5 +407,15 @@ namespace UnicomTIC_Management.Views
         {
 
         }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbSubGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

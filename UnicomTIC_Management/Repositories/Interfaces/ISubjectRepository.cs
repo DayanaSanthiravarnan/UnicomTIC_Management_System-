@@ -16,6 +16,7 @@ namespace UnicomTIC_Management.Repositories.Interfaces
             Subject GetSubjectById(int subjectId);
             List<Subject> GetAllSubjects();
             List<Subject> GetSubjectsByCourseId(int courseId);
+        int CreateSubject(Subject subject);
     }
     
 }

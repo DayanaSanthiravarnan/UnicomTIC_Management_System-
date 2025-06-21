@@ -13,22 +13,51 @@ namespace UnicomTIC_Management.Utilities
     {
         public static LecturerDTO ToDTO(Lecturer lecturer)
         {
-            if(lecturer == null) return null;
+            if (lecturer == null) return null;
+
             return new LecturerDTO
             {
                 LecturerID = lecturer.LecturerID,
                 Name = lecturer.Name,
-               NIC = lecturer.NIC,
-               Address = lecturer.Address,
-               Phone = lecturer.Phone,
-               DepartmentID = lecturer.DepartmentID,
+                NIC = lecturer.NIC,
+                Phone = lecturer.Phone,
+                Address = lecturer.Address,
                 Email = lecturer.Email,
+                DepartmentID = lecturer.DepartmentID,
+                UserID = lecturer.UserID,
                 CreatedAt = lecturer.CreatedAt,
-                UpdatedAt= lecturer.UpdatedAt,
-                
-
-
+                UpdatedAt = lecturer.UpdatedAt
             };
+        }
+
+        public static Lecturer ToEntity(LecturerDTO dto)
+        {
+            if (dto == null) return null;
+
+            return new Lecturer
+            {
+                LecturerID = dto.LecturerID,
+                Name = dto.Name,
+                NIC = dto.NIC,
+                Phone = dto.Phone,
+                Address = dto.Address,
+                Email = dto.Email,
+                DepartmentID = dto.DepartmentID,
+                UserID = dto.UserID,
+                CreatedAt = dto.CreatedAt,
+                UpdatedAt = dto.UpdatedAt
+            };
+        }
+
+        public static List<LecturerDTO> ToDTOList(IEnumerable<Lecturer> lecturers)
+        {
+            return lecturers?.Select(ToDTO).ToList() ?? new List<LecturerDTO>();
+        }
+
+        public static List<Lecturer> ToEntityList(IEnumerable<LecturerDTO> dtos)
+        {
+            return dtos?.Select(ToEntity).ToList() ?? new List<Lecturer>();
         }
     }
 }
+    

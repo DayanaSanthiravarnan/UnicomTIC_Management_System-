@@ -15,5 +15,6 @@ namespace UnicomTIC_Management.Services.Interfaces
         SubjectDTO GetSubjectById(int subjectId);
         List<SubjectDTO> GetAllSubjects();
         List<SubjectDTO> GetSubjectsByCourseId(int courseId);
+        int CreateSubject(SubjectDTO dto);
     }
 }

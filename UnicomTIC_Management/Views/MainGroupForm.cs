@@ -139,6 +139,10 @@ namespace UnicomTIC_Management.Views
         
         }
 
+        private void MainGroupForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

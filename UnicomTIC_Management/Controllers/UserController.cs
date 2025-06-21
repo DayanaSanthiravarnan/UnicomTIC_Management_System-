@@ -16,13 +16,13 @@ namespace UnicomTIC_Management.Controllers
             _userService = userService;
         }
         // Create user after validating admin credentials
-        public int CreateUser(string adminUsername, string adminPassword, UserDTO newUser)
+        public int CreateUser(UserDTO newUser)
         {
-            var adminUser = _userService.ValidateUser(adminUsername, adminPassword);
+          /*  var adminUser = _userService.ValidateUser(newUser.Username, newUser.Password);
             if (adminUser == null || adminUser.Role != Models.Enums.UserRole.Admin)
             {
                 throw new UnauthorizedAccessException("Only admin users can create new users.");
-            }
+            }*/
 
             int newUserId = _userService.AddUser(newUser);
             Console.WriteLine($"User created successfully with UserID: {newUserId}");
@@ -58,6 +58,11 @@ namespace UnicomTIC_Management.Controllers
         {
             _userService.RejectUser(userId);
         }
+
+        /*internal int CreateUser(UserDTO pendingUser)
+        {
+            throw new NotImplementedException();
+        }*/
     }
 }
 

@@ -12,6 +12,10 @@ namespace UnicomTIC_Management.Models.DTOs
         public string SubjectName { get; set; }
         public int CourseID { get; set; }
         public string CourseName { get; set; }
+        public int StudentId { get; set; }
+
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
 
     }
 }

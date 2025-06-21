@@ -116,11 +116,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(46, 290);
+            this.label8.Location = new System.Drawing.Point(52, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 13);
             this.label8.TabIndex = 7;
             this.label8.Text = " CourseName";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // txtName
             // 
@@ -225,7 +226,7 @@
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(207, 231);
+            this.dateTimePicker2.Location = new System.Drawing.Point(207, 235);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker2.TabIndex = 23;
@@ -307,6 +308,7 @@
             this.cmbSubGroup.Size = new System.Drawing.Size(121, 21);
             this.cmbSubGroup.TabIndex = 30;
             this.cmbSubGroup.Text = " ";
+            this.cmbSubGroup.SelectedIndexChanged += new System.EventHandler(this.cmbSubGroup_SelectedIndexChanged);
             // 
             // StudentDetailsForm
             // 

@@ -98,7 +98,7 @@ namespace UnicomTIC_Management.Views
 
                 if (_user == null || newUser.UserID == 0)
                 {
-                    _controller.CreateUser("admin", "adminpassword", newUser);
+                    _controller.CreateUser(newUser);
                     MessageBox.Show("User created successfully!");
                 }
                 else

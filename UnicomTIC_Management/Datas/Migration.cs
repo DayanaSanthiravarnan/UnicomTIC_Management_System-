@@ -17,8 +17,7 @@ namespace UnicomTIC_Management.Datas
                 cmd.CommandText = @"
                     PRAGMA foreign_keys = ON;
 
-                   
-
+                  
                     CREATE TABLE IF NOT EXISTS NICDetails (
                         NIC TEXT PRIMARY KEY NOT NULL,
                         IsUsed INTEGER DEFAULT 0 
@@ -102,7 +101,7 @@ namespace UnicomTIC_Management.Datas
                         FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
                     );
 
-                    CREATE TABLE IF NOT EXISTS Students (
+                   CREATE TABLE IF NOT EXISTS Students (
                         StudentID INTEGER PRIMARY KEY AUTOINCREMENT,
                         Name TEXT NOT NULL,
                         NIC TEXT NOT NULL UNIQUE,
@@ -114,8 +113,8 @@ namespace UnicomTIC_Management.Datas
                         EnrollmentDate TEXT NOT NULL,
                         CourseID INTEGER NOT NULL,
                         UserID INTEGER UNIQUE NOT NULL,
-                        MainGroupID INTEGER NOT NULL,
-                        SubGroupID INTEGER NOT NULL,
+                        MainGroupID INTEGER,
+                        SubGroupID INTEGER,
                         CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
                         UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
                         FOREIGN KEY (CourseID) REFERENCES Courses(CourseID),
@@ -158,39 +157,35 @@ namespace UnicomTIC_Management.Datas
                     );
 
 
-                    CREATE TABLE IF NOT EXISTS Lecturers (
-                        LecturerID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT NOT NULL,
-                        NIC TEXT NOT NULL UNIQUE,
-                        Phone TEXT,
-                        Address TEXT,
-                        Email TEXT,
-                        DepartmentID INTEGER,
-                        
-                        UserID INTEGER UNIQUE NOT NULL,
-                        CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Renamed from RegisteredAt
-                        UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                        FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID),
-                        FOREIGN KEY (UserID) REFERENCES Users(UserID),
-                        FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
-                    );
-
-                    CREATE TABLE IF NOT EXISTS Staff (
-                        StaffID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT NOT NULL,
-                        NIC TEXT NOT NULL UNIQUE,
-                        DepartmentID INTEGER,
-                        Role TEXT, -- This could describe their staff role (e.g., 'Admin Assistant', 'HR Manager')
-                        ContactNo TEXT,
-                        Email TEXT,
-                        HireDate TEXT,
-                        UserID INTEGER UNIQUE NOT NULL,
-                        CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP, -- Renamed from RegisteredAt
-                        UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                        FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID),
-                        FOREIGN KEY (UserID) REFERENCES Users(UserID),
-                        FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
-                    );
+                   CREATE TABLE IF NOT EXISTS Lecturers (
+                            LecturerID INTEGER PRIMARY KEY AUTOINCREMENT,
+                            Name TEXT NOT NULL,
+                            NIC TEXT NOT NULL UNIQUE,
+                            Phone TEXT NOT NULL,
+                            Address TEXT NOT NULL,
+                            Email TEXT NOT NULL,
+                            DepartmentID INTEGER,
+                            CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                            UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                            UserID INTEGER UNIQUE NOT NULL,
+                            FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID),
+                            FOREIGN KEY (UserID) REFERENCES Users(UserID),
+                            FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
+                        );
+                            CREATE TABLE IF NOT EXISTS Staff (
+                                StaffID INTEGER PRIMARY KEY AUTOINCREMENT,
+                                Name TEXT NOT NULL,
+                                NIC TEXT NOT NULL UNIQUE,
+                                DepartmentID INTEGER,
+                                ContactNo TEXT,
+                                Email TEXT,
+                                UserID INTEGER UNIQUE NOT NULL,
+                                CreatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                                UpdatedAt TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                                FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID),
+                                FOREIGN KEY (UserID) REFERENCES Users(UserID),
+                                FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
+                            );
 
                     CREATE TABLE IF NOT EXISTS EmployeeIDs (
                         EmployeeID TEXT PRIMARY KEY NOT NULL UNIQUE,

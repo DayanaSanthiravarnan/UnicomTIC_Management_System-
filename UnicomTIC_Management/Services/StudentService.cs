@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Repositories.Interfaces;
 using UnicomTIC_Management.Services.Interfaces;
@@ -19,15 +16,12 @@ namespace UnicomTIC_Management.Services
             _repository = repository;
         }
 
-        public void AddStudent(StudentDTO studentDTO)
+        public int AddStudent(StudentDTO studentDTO)
         {
             if (studentDTO == null)
                 throw new ArgumentNullException(nameof(studentDTO));
-            if (string.IsNullOrWhiteSpace(studentDTO.Name))
-                throw new ArgumentException("Student name is required.");
-
             var student = StudentMapper.ToEntity(studentDTO);
-            _repository.AddStudent(student);
+            return _repository.CreateStudent(student);
         }
 
         public void UpdateStudent(StudentDTO studentDTO)
@@ -59,3 +53,4 @@ namespace UnicomTIC_Management.Services
         }
     }
 }
+

@@ -11,5 +11,7 @@ namespace UnicomTIC_Management.Models
         public int MainGroupID { get; set; }
         public string GroupCode { get; set; }
         public string Description { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 }

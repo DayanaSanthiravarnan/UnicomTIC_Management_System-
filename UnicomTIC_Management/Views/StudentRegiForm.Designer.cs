@@ -35,7 +35,6 @@
             this.txtNIC = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtContactNo = new System.Windows.Forms.TextBox();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.cmbCourse = new System.Windows.Forms.ComboBox();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.dtpDob = new System.Windows.Forms.DateTimePicker();
@@ -44,7 +43,6 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -92,6 +90,7 @@
             this.txtNIC.Name = "txtNIC";
             this.txtNIC.Size = new System.Drawing.Size(100, 20);
             this.txtNIC.TabIndex = 2;
+            this.txtNIC.TextChanged += new System.EventHandler(this.txtNIC_TextChanged);
             // 
             // txtName
             // 
@@ -106,15 +105,6 @@
             this.txtContactNo.Name = "txtContactNo";
             this.txtContactNo.Size = new System.Drawing.Size(100, 20);
             this.txtContactNo.TabIndex = 3;
-            // 
-            // cmbRole
-            // 
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Location = new System.Drawing.Point(299, 64);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(121, 21);
-            this.cmbRole.TabIndex = 4;
-            this.cmbRole.Text = " ";
             // 
             // cmbCourse
             // 
@@ -183,15 +173,6 @@
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Password";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(213, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Role";
             // 
             // label4
             // 
@@ -299,7 +280,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancel);
@@ -308,7 +288,6 @@
             this.Controls.Add(this.dtpDob);
             this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.cmbCourse);
-            this.Controls.Add(this.cmbRole);
             this.Controls.Add(this.txtContactNo);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtNIC);
@@ -333,7 +312,6 @@
         private System.Windows.Forms.TextBox txtNIC;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtContactNo;
-        private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.ComboBox cmbCourse;
         private System.Windows.Forms.ComboBox cmbGender;
         private System.Windows.Forms.DateTimePicker dtpDob;
@@ -342,7 +320,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

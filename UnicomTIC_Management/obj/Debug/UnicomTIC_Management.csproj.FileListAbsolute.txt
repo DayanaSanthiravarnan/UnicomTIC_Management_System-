@@ -1,0 +1,54 @@
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.exe.config
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.exe
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.pdb
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\System.Data.SQLite.dll
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\System.Data.SQLite.xml
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.AssemblyReference.cache
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Properties.Resources.resources
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.GenerateResource.cache
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.CoreCompileInputs.cache
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTI.96544292.Up2Date
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.exe
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.pdb
+Z:\cproject\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.CourceForm.resources
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.AssemblyReference.cache
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.exe.config
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Properties.Resources.resources
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.CourceForm.resources
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.GenerateResource.cache
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.CoreCompileInputs.cache
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.exe
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.pdb
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.exe.config
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.exe
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.pdb
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\System.Data.SQLite.dll
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\System.Data.SQLite.xml
+D:\Unicom TIC\C#\Dayana\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTI.96544292.Up2Date
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.exe.config
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.exe
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\UnicomTIC_Management.pdb
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\bin\Debug\System.Data.SQLite.xml
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.AssemblyReference.cache
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Properties.Resources.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.CourceForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.GenerateResource.cache
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.csproj.CoreCompileInputs.cache
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTI.96544292.Up2Date
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.exe
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.pdb
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.MainGroupForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.SubjectForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.DepartmentForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.ExamForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.UserDetailsForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.UserManagementForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.StudentDetailsForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.StudentRegiForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.LoginForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.RoleSelectForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.SubGroupForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.NICRegistrationForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.LecturerRegistrationForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.RoomManagementForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.StaffRegiForm.resources

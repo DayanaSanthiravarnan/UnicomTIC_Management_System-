@@ -54,5 +54,10 @@ namespace UnicomTIC_Management.Services
             var MainGroup = _mainGroupRepository.GetAllMainGroup();
             return MainGroupMapper.ToDTOList(MainGroup);
         }
+        public int CreateMainGroup(MainGroupDTO dto)   // <-- இந்த method தவறாமல் சேர்க்கவும்
+        {
+            var entity = MainGroupMapper.ToEntity(dto);
+            return _mainGroupRepository.CreateMainGroup(entity);
+        }
     }
 }

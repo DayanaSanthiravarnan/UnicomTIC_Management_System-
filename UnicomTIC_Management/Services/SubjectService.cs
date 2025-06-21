@@ -57,6 +57,11 @@ namespace UnicomTIC_Management.Services
             var subjects = _subjectRepository.GetSubjectsByCourseId(courseId);
             return SubjectMapper.ToDTOList(subjects);
         }
+        public int CreateSubject(SubjectDTO dto)
+        {
+            var entity = SubjectMapper.ToEntity(dto);
+            return _subjectRepository.CreateSubject(entity); // must return new ID
+        }
 
     }
 }
