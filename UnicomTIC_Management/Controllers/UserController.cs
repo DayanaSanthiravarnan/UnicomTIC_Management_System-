@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Models.Enums;
 using UnicomTIC_Management.Services.Interfaces;
@@ -57,6 +58,18 @@ namespace UnicomTIC_Management.Controllers
         public void RejectUser(int userId)
         {
             _userService.RejectUser(userId);
+        }
+        public bool IsUsernameTaken(string username)
+        {
+            try
+            {
+                return _userService.IsUsernameTaken(username);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error checking username: {ex.Message}");
+                return false; // or true, depending on your default policy
+            }
         }
 
         /*internal int CreateUser(UserDTO pendingUser)

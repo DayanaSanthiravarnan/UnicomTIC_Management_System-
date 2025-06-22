@@ -48,9 +48,28 @@ namespace UnicomTIC_Management.Views
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrWhiteSpace(txtUsername.Text) || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 MessageBox.Show("Username and Password are required.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (_userController.IsUsernameTaken(txtUsername.Text.Trim()))
+            {
+                MessageBox.Show("invalid username. Please choose another.", "Username Exists", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string password = txtPassword.Text.Trim();
+            if (password.Length < 8)
+            {
+                MessageBox.Show("Password must be at least 8 characters long.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!System.Text.RegularExpressions.Regex.IsMatch(password, @"[!@#$%^&*(),.?""':{}|<>]"))
+            {
+                MessageBox.Show("Password must include at least one special character (e.g. !, @, #, etc.).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

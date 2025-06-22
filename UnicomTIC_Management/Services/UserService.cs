@@ -4,6 +4,7 @@ using System.Linq;
 using UnicomTIC_Management.Models;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Models.Enums;
+using UnicomTIC_Management.Repositories;
 using UnicomTIC_Management.Repositories.Interfaces;
 using UnicomTIC_Management.Services.Interfaces;
 using UnicomTIC_Management.Utilities;
@@ -93,6 +94,13 @@ namespace UnicomTIC_Management.Services
         {
             var user = _repository.GetUserByUsernameAndPassword(username, password);
             return UserMapper.ToDTO(user);
+        }
+        public bool IsUsernameTaken(string username)
+        {
+            if (string.IsNullOrWhiteSpace(username))
+                return false;
+
+            return _repository.DoesUsernameExist(username);
         }
 
     }

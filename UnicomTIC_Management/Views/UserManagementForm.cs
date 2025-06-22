@@ -79,7 +79,7 @@ namespace UnicomTIC_Management.Views
                     MainGroupID = mainGroupId,
                     SubGroupName = "Default Sub Group"
                 };
-                int subGroupId = _subGroupController.CreateSubGroup(subGroup);
+                int subGroupId = _subGroupController.AddSubGroup(subGroup);
 
                 var subject = new SubjectDTO
                 {

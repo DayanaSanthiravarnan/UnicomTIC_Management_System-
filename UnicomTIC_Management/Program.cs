@@ -77,7 +77,7 @@ namespace UnicomTIC_Management
             // pendingStudent
             // ));
             
-            Application.Run(new StudentRegiForm()
+            Application.Run(new TimetableForm()
 
            );
             

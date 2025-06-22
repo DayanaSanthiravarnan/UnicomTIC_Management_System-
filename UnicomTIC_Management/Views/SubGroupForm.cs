@@ -23,7 +23,7 @@ namespace UnicomTIC_Management.Views
             InitializeComponent();
             var subRepo = new SubGroupRepository();
             var mainRepo = new MainGroupRepository();
-            var subService = new SubGroupService(subRepo, mainRepo);
+            var subService = new SubGroupService(subRepo);
             var mainService = new MainGroupService(mainRepo);
 
             _controller = new SubGroupController(subService);

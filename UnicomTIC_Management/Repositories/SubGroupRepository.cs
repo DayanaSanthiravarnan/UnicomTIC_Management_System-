@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,29 +12,39 @@ namespace UnicomTIC_Management.Repositories
 {
     internal class SubGroupRepository : ISubGroupRepository
     {
-        public void AddSubGroup(SubGroup subGroup)
+        public int AddSubGroup(SubGroup subgroup)
         {
             using (var conn = Dbconfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO SubGroups (MainGroupID, SubGroupName, Description) VALUES (@MainGroupID, @SubGroupName, @Description)";
-                cmd.Parameters.AddWithValue("@MainGroupID", subGroup.MainGroupID);
-                cmd.Parameters.AddWithValue("@SubGroupName", subGroup.SubGroupName);
-                cmd.Parameters.AddWithValue("@Description", subGroup.Description ?? (object)DBNull.Value);
-                cmd.ExecuteNonQuery();
+                cmd.CommandText = @"
+                    INSERT INTO SubGroups (MainGroupID, SubGroupName, Description)
+                    VALUES (@MainGroupID, @SubGroupName, @Description);
+                    SELECT last_insert_rowid();";
+
+                cmd.Parameters.AddWithValue("@MainGroupID", subgroup.MainGroupID);
+                cmd.Parameters.AddWithValue("@SubGroupName", subgroup.SubGroupName);
+                cmd.Parameters.AddWithValue("@Description", subgroup.Description ?? "");
+
+                return Convert.ToInt32(cmd.ExecuteScalar());
             }
         }
 
-        public void UpdateSubGroup(SubGroup subGroup)
+        public void UpdateSubGroup(SubGroup subgroup)
         {
             using (var conn = Dbconfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = @"UPDATE SubGroups SET MainGroupID = @MainGroupID, SubGroupName = @SubGroupName, Description = @Description WHERE SubGroupID = @SubGroupID";
-                cmd.Parameters.AddWithValue("@SubGroupID", subGroup.SubGroupID);
-                cmd.Parameters.AddWithValue("@MainGroupID", subGroup.MainGroupID);
-                cmd.Parameters.AddWithValue("@SubGroupName", subGroup.SubGroupName);
-                cmd.Parameters.AddWithValue("@Description", subGroup.Description ?? (object)DBNull.Value);
+                cmd.CommandText = @"
+                    UPDATE SubGroups
+                    SET MainGroupID = @MainGroupID, SubGroupName = @SubGroupName, Description = @Description
+                    WHERE SubGroupID = @SubGroupID";
+
+                cmd.Parameters.AddWithValue("@SubGroupID", subgroup.SubGroupID);
+                cmd.Parameters.AddWithValue("@MainGroupID", subgroup.MainGroupID);
+                cmd.Parameters.AddWithValue("@SubGroupName", subgroup.SubGroupName);
+                cmd.Parameters.AddWithValue("@Description", subgroup.Description ?? "");
+
                 cmd.ExecuteNonQuery();
             }
         }
@@ -54,7 +65,11 @@ namespace UnicomTIC_Management.Repositories
             using (var conn = Dbconfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT SubGroupID, MainGroupID, SubGroupName, Description FROM SubGroups WHERE SubGroupID = @SubGroupID";
+                cmd.CommandText = @"
+                    SELECT SubGroupID, MainGroupID, SubGroupName, Description
+                    FROM SubGroups
+                    WHERE SubGroupID = @SubGroupID";
+
                 cmd.Parameters.AddWithValue("@SubGroupID", subGroupId);
 
                 using (var reader = cmd.ExecuteReader())
@@ -80,7 +95,9 @@ namespace UnicomTIC_Management.Repositories
             using (var conn = Dbconfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT SubGroupID, MainGroupID, SubGroupName, Description FROM SubGroups";
+                cmd.CommandText = @"
+                    SELECT SubGroupID, MainGroupID, SubGroupName, Description
+                    FROM SubGroups";
 
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -105,7 +122,11 @@ namespace UnicomTIC_Management.Repositories
             using (var conn = Dbconfig.GetConnection())
             {
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = "SELECT SubGroupID, MainGroupID, SubGroupName, Description FROM SubGroups WHERE MainGroupID = @MainGroupID";
+                cmd.CommandText = @"
+                    SELECT SubGroupID, MainGroupID, SubGroupName, Description
+                    FROM SubGroups
+                    WHERE MainGroupID = @MainGroupID";
+
                 cmd.Parameters.AddWithValue("@MainGroupID", mainGroupId);
 
                 using (var reader = cmd.ExecuteReader())
@@ -123,22 +144,6 @@ namespace UnicomTIC_Management.Repositories
                 }
             }
             return list;
-        }
-        public int CreateSubGroup(SubGroup subGroup)
-        {
-            using (var conn = Dbconfig.GetConnection())
-            {
-                var cmd = conn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO SubGroups (MainGroupID, SubGroupName, Description) 
-                            VALUES (@MainGroupID, @SubGroupName, @Description); 
-                            SELECT last_insert_rowid();"; // SQLite specific
-                cmd.Parameters.AddWithValue("@MainGroupID", subGroup.MainGroupID);
-                cmd.Parameters.AddWithValue("@SubGroupName", subGroup.SubGroupName);
-                cmd.Parameters.AddWithValue("@Description", subGroup.Description ?? (object)DBNull.Value);
-
-                var result = cmd.ExecuteScalar();
-                return Convert.ToInt32(result);
-            }
         }
     }
 }

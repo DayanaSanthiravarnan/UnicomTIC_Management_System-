@@ -9,13 +9,11 @@ namespace UnicomTIC_Management.Services.Interfaces
 {
     internal interface ISubGroupService
     {
-        void AddSubGroup(SubGroupDTO dto);
+        int AddSubGroup(SubGroupDTO dto);
         void UpdateSubGroup(SubGroupDTO dto);
-        void DeleteSubGroup(int id);
-        SubGroupDTO GetSubGroupById(int id);
+        void DeleteSubGroup(int subGroupId);
+        SubGroupDTO GetSubGroupById(int subGroupId);
         List<SubGroupDTO> GetAllSubGroups();
-
         List<SubGroupDTO> GetSubGroupsByMainGroupId(int mainGroupId);
-        int CreateSubGroup(SubGroupDTO dto);
     }
 }

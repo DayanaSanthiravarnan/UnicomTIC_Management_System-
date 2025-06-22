@@ -17,5 +17,6 @@ namespace UnicomTIC_Management.Repositories.Interfaces
         List<User> GetAllUsers();
         User GetUserById(int userId);
         User GetUserByUsernameAndPassword(string username, string password);
+        bool DoesUsernameExist(string username);
     }
 }

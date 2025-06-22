@@ -52,3 +52,6 @@ Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_
 Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.LecturerRegistrationForm.resources
 Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.RoomManagementForm.resources
 Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.StaffRegiForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.MentorRegiForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.TimeSlotForm.resources
+Z:\C#\OOP_Project\UnicomTIC_Management\UnicomTIC_Management\obj\Debug\UnicomTIC_Management.Views.TimetableForm.resources

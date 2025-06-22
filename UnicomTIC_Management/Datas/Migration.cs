@@ -16,8 +16,9 @@ namespace UnicomTIC_Management.Datas
 
                 cmd.CommandText = @"
                     PRAGMA foreign_keys = ON;
-
-                  
+                    ALTER TABLE Timetables ADD COLUMN StartTime TEXT;
+ALTER TABLE Timetables ADD COLUMN EndTime TEXT;
+              
                     CREATE TABLE IF NOT EXISTS NICDetails (
                         NIC TEXT PRIMARY KEY NOT NULL,
                         IsUsed INTEGER DEFAULT 0 
@@ -81,7 +82,7 @@ namespace UnicomTIC_Management.Datas
                     CREATE TABLE IF NOT EXISTS SubGroups (
                         SubGroupID INTEGER PRIMARY KEY AUTOINCREMENT,
                         MainGroupID INTEGER NOT NULL,
-                        SubGroupName TEXT NOT NULL UNIQUE, -- e.g., 'Group A - Presentation', 'Group B - Grammar'
+                        SubGroupName TEXT NOT NULL UNIQUE,
                         Description TEXT,
                         FOREIGN KEY (MainGroupID) REFERENCES MainGroups(MainGroupID)
                     );
@@ -100,6 +101,14 @@ namespace UnicomTIC_Management.Datas
                         FOREIGN KEY (UserID) REFERENCES Users(UserID),
                         FOREIGN KEY (NIC) REFERENCES NICDetails(NIC)
                     );
+                        CREATE TABLE IF NOT EXISTS TimeSlots (
+                            SlotID INTEGER PRIMARY KEY,
+                            StartTime TEXT,
+                            EndTime TEXT
+                        );
+                     
+
+
 
                    CREATE TABLE IF NOT EXISTS Students (
                         StudentID INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -272,29 +281,33 @@ namespace UnicomTIC_Management.Datas
                     );
 
                   
-                    CREATE TABLE IF NOT EXISTS Rooms (
+                   CREATE TABLE IF NOT EXISTS Rooms (
                         RoomID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        RoomNumber TEXT NOT NULL UNIQUE,
-                        Capacity INTEGER,
-                        RoomType TEXT NOT NULL
+                        RoomName TEXT NOT NULL
                     );
 
-                    CREATE TABLE IF NOT EXISTS Timetables (
+                                      CREATE TABLE IF NOT EXISTS Timetables (
                         TimetableID INTEGER PRIMARY KEY AUTOINCREMENT,
                         CourseID INTEGER NOT NULL,
                         SubjectID INTEGER NOT NULL,
                         LecturerID INTEGER NOT NULL,
                         RoomID INTEGER NOT NULL,
+                        SlotID INTEGER NOT NULL,
+                        MainGroupID INTEGER NOT NULL,
+                        SubGroupID INTEGER,
                         DayOfWeek TEXT NOT NULL,
-                        TimeSlot TEXT NOT NULL,
                         AcademicYear TEXT NOT NULL,
                         Semester TEXT NOT NULL,
+                        StartTime TEXT,
+                        EndTime TEXT,
                         FOREIGN KEY (CourseID) REFERENCES Courses(CourseID),
                         FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID),
                         FOREIGN KEY (LecturerID) REFERENCES Lecturers(LecturerID),
-                        FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
+                        FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID),
+                        FOREIGN KEY (SlotID) REFERENCES TimeSlots(SlotID),
+                        FOREIGN KEY (MainGroupID) REFERENCES MainGroups(MainGroupID),
+                        FOREIGN KEY (SubGroupID) REFERENCES SubGroups(SubGroupID)
                     );
-
                     CREATE TABLE IF NOT EXISTS Attendance (
                         AttendanceID INTEGER PRIMARY KEY AUTOINCREMENT,
                         StudentID INTEGER NOT NULL,

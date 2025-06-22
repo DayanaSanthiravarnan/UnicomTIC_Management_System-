@@ -18,16 +18,16 @@ namespace UnicomTIC_Management.Controllers
             _service = service;
         }
 
-        public void AddSubGroup(SubGroupDTO dto)
+        public int AddSubGroup(SubGroupDTO dto)
         {
             try
             {
-                _service.AddSubGroup(dto);
-                MessageBox.Show("SubGroup added successfully.");
+                return _service.AddSubGroup(dto);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error adding SubGroup: " + ex.Message);
+                MessageBox.Show($"Error adding subgroup: {ex.Message}");
+                return -1;  // or throw or some error code you prefer
             }
         }
 
@@ -36,44 +36,64 @@ namespace UnicomTIC_Management.Controllers
             try
             {
                 _service.UpdateSubGroup(dto);
-                MessageBox.Show("SubGroup updated successfully.");
+                MessageBox.Show("SubGroup updated successfully!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error updating SubGroup: " + ex.Message);
+                MessageBox.Show($"Error updating subgroup: {ex.Message}");
             }
         }
 
-        public void DeleteSubGroup(int id)
+        public void DeleteSubGroup(int subGroupId)
         {
             try
             {
-                _service.DeleteSubGroup(id);
-                MessageBox.Show("SubGroup deleted successfully.");
+                _service.DeleteSubGroup(subGroupId);
+                MessageBox.Show("SubGroup deleted successfully!");
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error deleting SubGroup: " + ex.Message);
+                MessageBox.Show($"Error deleting subgroup: {ex.Message}");
             }
         }
 
-        public SubGroupDTO GetSubGroupById(int id)
+        public SubGroupDTO GetSubGroupById(int subGroupId)
         {
-            return _service.GetSubGroupById(id);
+            try
+            {
+                return _service.GetSubGroupById(subGroupId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving subgroup: {ex.Message}");
+                return null;
+            }
         }
 
         public List<SubGroupDTO> GetAllSubGroups()
         {
-            return _service.GetAllSubGroups();
+            try
+            {
+                return _service.GetAllSubGroups();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving subgroups: {ex.Message}");
+                return new List<SubGroupDTO>();
+            }
         }
 
         public List<SubGroupDTO> GetSubGroupsByMainGroupId(int mainGroupId)
         {
-            return _service.GetSubGroupsByMainGroupId(mainGroupId);
-        }
-        public int CreateSubGroup(SubGroupDTO dto)
-        {
-            return _service.CreateSubGroup(dto);
+            try
+            {
+                return _service.GetSubGroupsByMainGroupId(mainGroupId);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving subgroups by main group: {ex.Message}");
+                return new List<SubGroupDTO>();
+            }
         }
     }
 }

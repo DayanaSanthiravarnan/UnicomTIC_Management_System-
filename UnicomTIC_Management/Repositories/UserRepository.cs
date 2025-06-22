@@ -226,6 +226,18 @@ namespace UnicomTIC_Management.Repositories
                 UpdatedAt = DateTime.Parse(reader.GetString(reader.GetOrdinal("UpdatedAt")))
             };
         }
+        public bool DoesUsernameExist(string username)
+        {
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT COUNT(1) FROM Users WHERE Username = @Username";
+                cmd.Parameters.AddWithValue("@Username", username);
+
+                long count = (long)cmd.ExecuteScalar();
+                return count > 0;
+            }
+        }
     }
 }
 
