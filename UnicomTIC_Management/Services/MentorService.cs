@@ -54,5 +54,10 @@ namespace UnicomTIC_Management.Services
             var mentors = _repository.GetAllMentors();
             return MentorMapper.ToDTOList(mentors);
         }
+
+        public MentorDTO GetMentorByUserId(int userId)
+        {
+            return _repository.GetMentorByUserId(userId);
+        }
     }
 }

@@ -14,5 +14,6 @@ namespace UnicomTIC_Management.Repositories.Interfaces
         void DeleteStaff(int staffId);
         Staff GetStaffById(int staffId);
         List<Staff> GetAllStaff();
+        Staff GetStaffByUserId(int userId);
     }
 }

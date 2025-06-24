@@ -14,7 +14,7 @@ using UnicomTIC_Management.Models.Enums;
 
 namespace UnicomTIC_Management.Views
 {
-    public partial class UserDetailsForm : Form
+    internal partial class UserDetailsForm : Form
     {
 
         private UserController _controller;

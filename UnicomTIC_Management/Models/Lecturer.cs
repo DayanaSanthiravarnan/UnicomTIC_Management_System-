@@ -21,5 +21,6 @@ namespace UnicomTIC_Management.Models
         public DateTime UpdatedAt { get; set; }
         public UserStatus Status { get; set; }
         public string DepartmentName { get; set; }
+        public string UserName { get; set; }
     }
 }

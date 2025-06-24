@@ -18,33 +18,31 @@ using UnicomTIC_Management.Models.DTOs;
 
 namespace UnicomTIC_Management.Views
 {
-    public partial class StudentDetailsForm : Form
+    internal partial class StudentDetailsForm : Form
     {
-        private List<Course> courses = new List<Course>();
-        private List<MainGroup> mainGroups = new List<MainGroup>();
 
         private readonly CourseController _courseController;
         private readonly MainGroupController _mainGroupController;
+        private readonly SubGroupController _subGroupController;
         private readonly StudentController _studentController;
 
         private int selectedStudentId = 0;
         private int currentUserId = 0;
 
+        private List<Course> courses = new List<Course>();
+        private List<MainGroup> mainGroups = new List<MainGroup>();
+        private List<SubGroup> subGroups = new List<SubGroup>();
         private List<StudentDTO> students = new List<StudentDTO>();
 
 
-        internal StudentDetailsForm(StudentController studentController,
-                                  CourseController courseController,
-                                  MainGroupController mainGroupController)
+        public StudentDetailsForm(StudentController studentController, CourseController courseController, MainGroupController mainGroupController, SubGroupController subGroupController)
         {
             InitializeComponent();
-
             _studentController = studentController;
             _courseController = courseController;
             _mainGroupController = mainGroupController;
-
+            _subGroupController = subGroupController;
             SetupEvents();
-
             LoadCourses();
             LoadStudents();
         }
@@ -52,7 +50,6 @@ namespace UnicomTIC_Management.Views
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (!ValidateForm()) return;
-
             var studentDTO = new StudentDTO
             {
                 Name = txtName.Text.Trim(),
@@ -64,103 +61,68 @@ namespace UnicomTIC_Management.Views
                 DateOfBirth = dtpDOB.Value,
                 CourseID = (int)cmbCourse.SelectedValue,
                 MainGroupID = (int)cmbMainGroup.SelectedValue,
+                SubGroupID = (int)cmbSubGroup.SelectedValue,
                 UserID = currentUserId,
                 CreatedAt = DateTime.Now,
                 UpdatedAt = DateTime.Now
             };
-
             _studentController.AddStudent(studentDTO);
-
             LoadStudents();
             ClearForm();
         }
+        private void SetupEvents()
+        {
+            cmbCourse.SelectedIndexChanged += cmbCourse_SelectedIndexChanged;
+            cmbMainGroup.SelectedIndexChanged += cmbMainGroup_SelectedIndexChanged;
+            dgvStudents.CellClick += dgvStudents_CellClick;
+            btnAdd.Click += btnAdd_Click;
+            btnUpdate.Click += btnUpdate_Click;
+            btnDelete.Click += btnDelete_Click;
+            btnClear.Click += btnClear_Click;
+        }
+
 
         private void StudentDetailsForm_Load(object sender, EventArgs e)
         {
-            //LoadDummyData();
+
+
+
             LoadComboBoxes();
-           
-            SetupEvents();
-
-            // After loading courses, check if a course is selected, then load MainGroups
-            if (cmbCourse.SelectedValue != null && int.TryParse(cmbCourse.SelectedValue.ToString(), out int courseId)) ;
-            
-                
-
-                // Similarly, load subgroups for the selected main group if any
-                //if (cmbMainGroup.SelectedValue != null && int.TryParse(cmbMainGroup.SelectedValue.ToString(), out int mainGroupId))
-                //{
-                  // LoadSubGroupsFromDatabase(mainGroupId);
-               // }
-            
 
         }
         private void LoadCourses()
         {
             var courseDTOs = _courseController.GetAllCourses();
-            courses = courseDTOs.Select(dto => new Course
-            {
-                CourseID = dto.CourseID,
-                CourseName = dto.CourseName
-            }).ToList();
-
+            courses = courseDTOs.Select(dto => new Course { CourseID = dto.CourseID, CourseName = dto.CourseName }).ToList();
             cmbCourse.DataSource = courses;
             cmbCourse.DisplayMember = "CourseName";
             cmbCourse.ValueMember = "CourseID";
-            cmbCourse.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            cmbCourse.SelectedIndex = -1; // no default selection initially
-
-            // Clear dependent combos
-            cmbMainGroup.DataSource = null;
+            cmbCourse.SelectedIndex = -1;
         }
 
         private void LoadMainGroups(int courseId)
         {
-            var mainGroupDTOs = _mainGroupController.GetAllMainGroup();// this function not implemented so please implement that
-
-            // Filter by courseId if needed, assuming MainGroup has CourseID property, add that filter here
-            // mainGroups = mainGroupDTOs.Where(mg => mg.CourseID == courseId).ToList();
-
-            mainGroups = mainGroupDTOs.Select(dto => new MainGroup
-            {
-                MainGroupID = dto.MainGroupID,
-                GroupCode = dto.GroupCode
-            }).ToList();
-
-            if (mainGroups.Count > 0)
-            {
-                cmbMainGroup.DataSource = mainGroups;
-                cmbMainGroup.DisplayMember = "GroupCode";
-                cmbMainGroup.ValueMember = "MainGroupID";
-                cmbMainGroup.DropDownStyle = ComboBoxStyle.DropDownList;
-                cmbMainGroup.SelectedIndex = -1;
-            }
-            else
-            {
-                cmbMainGroup.DataSource = null;
-                MessageBox.Show("No main groups found for selected course.");
-            }
+            var mainGroupDTOs = _mainGroupController.GetAllMainGroup();
+            mainGroups = mainGroupDTOs.Select(dto => new MainGroup { MainGroupID = dto.MainGroupID, GroupCode = dto.GroupCode }).ToList();
+            cmbMainGroup.DataSource = mainGroups;
+            cmbMainGroup.DisplayMember = "GroupCode";
+            cmbMainGroup.ValueMember = "MainGroupID";
+            cmbMainGroup.SelectedIndex = -1;
         }
-        //private void LoadSubGroupsFromDatabase(int mainGroupId)
-        //{
-        //    subGroups = _subGroupController.GetAllSubGroups()
-        //                   .Where(sg => sg.MainGroupID == mainGroupId)
-        //                   .ToList();
-
-        //    if (subGroups.Any())
-        //    {
-        //        cmbSubGroup.DataSource = subGroups;
-        //        cmbSubGroup.DisplayMember = "SubGroupName";
-        //        cmbSubGroup.ValueMember = "SubGroupID";
-        //        cmbSubGroup.DropDownStyle = ComboBoxStyle.DropDownList;
-        //    }
-        //    else
-        //    {
-        //        cmbSubGroup.DataSource = null;
-        //        MessageBox.Show("No subgroups found for the selected main group.");
-        //    }
-        //}
+        private void LoadSubGroupsFromDatabase(int? mainGroupId)
+        {
+            var subGroupDTOs = _subGroupController.GetAllSubGroups();
+            subGroups = subGroupDTOs.Where(sg => sg.MainGroupID == mainGroupId).Select(dto => new SubGroup
+            {
+                SubGroupID = dto.SubGroupID,
+                SubGroupName = dto.SubGroupName,
+                MainGroupID = dto.MainGroupID
+            }).ToList();
+            cmbSubGroup.DataSource = subGroups;
+            cmbSubGroup.DisplayMember = "SubGroupName";
+            cmbSubGroup.ValueMember = "SubGroupID";
+            cmbSubGroup.SelectedIndex = -1;
+        }
 
 
 
@@ -169,42 +131,19 @@ namespace UnicomTIC_Management.Views
 
         private void LoadComboBoxes()
         {
-            // Load Courses
-            cmbCourse.DataSource = courses;
-            cmbCourse.DisplayMember = "CourseName";
-            cmbCourse.ValueMember = "CourseID";
-            cmbCourse.DropDownStyle = ComboBoxStyle.DropDownList;
+           
 
-            // Load Main Groups
-            cmbMainGroup.DataSource = mainGroups;
-            cmbMainGroup.DisplayMember = "GroupCode";
-            cmbMainGroup.ValueMember = "MainGroupID";
-            cmbMainGroup.DropDownStyle = ComboBoxStyle.DropDownList;
+            
 
-            // Load Gender options
+           
             cmbGender.Items.Clear();
             cmbGender.Items.AddRange(new string[] { "Male", "Female", "Other" });
             cmbGender.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            // Reset Subjects and SubGroups ComboBoxes
-            //cmbSubject.DataSource = null;
-            //cmbSubject.DropDownStyle = ComboBoxStyle.DropDownList;
-
-            cmbSubGroup.DataSource = null;
-            cmbSubGroup.DropDownStyle = ComboBoxStyle.DropDownList;
+            
         }
 
-        private void SetupEvents()
-        {
-            cmbCourse.SelectedIndexChanged += cmbCourse_SelectedIndexChanged;
-            cmbMainGroup.SelectedIndexChanged += cmbMainGroup_SelectedIndexChanged;
-            dgvStudents.CellClick += dgvStudents_CellClick;
-
-            btnAdd.Click += btnAdd_Click;
-            btnUpdate.Click += btnUpdate_Click;
-            btnDelete.Click += btnDelete_Click;
-            btnClear.Click += btnClear_Click;
-        }
+        
 
         private void cmbCourse_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -220,18 +159,14 @@ namespace UnicomTIC_Management.Views
 
         private void cmbMainGroup_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbMainGroup.SelectedValue == null)
-                return;
-
-            //if (int.TryParse(cmbMainGroup.SelectedValue.ToString(), out int mainGroupId))
-            //{
-               // LoadSubGroupsFromDatabase(mainGroupId);
-            //}
+            if (cmbMainGroup.SelectedValue is int mainGroupId)
+            {
+                LoadSubGroupsFromDatabase(mainGroupId);
+            }
         }
         private void LoadStudents()
         {
             students = _studentController.GetAllStudents();
-
             dgvStudents.DataSource = students.Select(s => new
             {
                 s.StudentID,
@@ -243,25 +178,18 @@ namespace UnicomTIC_Management.Views
                 s.Gender,
                 DOB = s.DateOfBirth?.ToShortDateString() ?? "",
                 Course = courses.FirstOrDefault(c => c.CourseID == s.CourseID)?.CourseName,
-                MainGroup = mainGroups.FirstOrDefault(mg => mg.MainGroupID == s.MainGroupID)?.GroupCode
+                MainGroup = mainGroups.FirstOrDefault(mg => mg.MainGroupID == s.MainGroupID)?.GroupCode,
+                SubGroup = subGroups.FirstOrDefault(sg => sg.SubGroupID == s.SubGroupID)?.SubGroupName
             }).ToList();
-
-            dgvStudents.ClearSelection();
         }
 
         private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
-
             var row = dgvStudents.Rows[e.RowIndex];
-            if (row == null) return;
-
-            int studentId = Convert.ToInt32(row.Cells["StudentID"].Value);
-
-            var student = students.FirstOrDefault(s => s.StudentID == studentId);
+            selectedStudentId = Convert.ToInt32(row.Cells["StudentID"].Value);
+            var student = students.FirstOrDefault(s => s.StudentID == selectedStudentId);
             if (student == null) return;
-
-            selectedStudentId = student.StudentID;
             txtName.Text = student.Name;
             xtNIC.Text = student.NIC;
             txtAddress.Text = student.Address;
@@ -271,18 +199,30 @@ namespace UnicomTIC_Management.Views
             dtpDOB.Value = student.DateOfBirth ?? DateTime.Now;
             cmbCourse.SelectedValue = student.CourseID;
             LoadMainGroups(student.CourseID);
-            cmbMainGroup.SelectedValue = student.MainGroupID;
+            if (student.MainGroupID.HasValue)
+            {
+                cmbMainGroup.SelectedValue = student.MainGroupID.Value;
+            }
+            else
+            {
+                cmbMainGroup.SelectedIndex = -1; // Or set to a default value if needed
+            }
+            LoadSubGroupsFromDatabase(student.MainGroupID);
+            if (student.SubGroupID.HasValue)
+            {
+                cmbSubGroup.SelectedValue = student.SubGroupID.Value;
+            }
+            else
+            {
+                cmbSubGroup.SelectedIndex = -1; // Clear selection if null
+            }
+
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (selectedStudentId == 0)
-            {
-                MessageBox.Show("Please select a student to update.");
+            if (selectedStudentId == 0 || !ValidateForm())
                 return;
-            }
-
-            if (!ValidateForm()) return;
 
             var studentDTO = new StudentDTO
             {
@@ -293,28 +233,24 @@ namespace UnicomTIC_Management.Views
                 ContactNo = txtContactNo.Text.Trim(),
                 Email = txtEmail.Text.Trim(),
                 Gender = cmbGender.SelectedItem?.ToString(),
-                DateOfBirth = dtpDOB.Value,
-                CourseID = (int)cmbCourse.SelectedValue,
-                MainGroupID = (int)cmbMainGroup.SelectedValue,
+                DateOfBirth = dtpDOB.Value.Date,
+                CourseID = cmbCourse.SelectedValue is int courseId ? courseId : 0,
+                MainGroupID = cmbMainGroup.SelectedValue is int mainGroupId ? mainGroupId : (int?)null,
+                SubGroupID = cmbSubGroup.SelectedValue is int subGroupId ? subGroupId : (int?)null,
                 UserID = currentUserId,
                 UpdatedAt = DateTime.Now
             };
-
+           
             _studentController.UpdateStudent(studentDTO);
-
             LoadStudents();
             ClearForm();
         }
 
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (selectedStudentId == 0)
-            {
-                MessageBox.Show("Please select a student to delete.");
-                return;
-            }
-
-            var confirm = MessageBox.Show("Are you sure to delete this student?", "Confirm Delete", MessageBoxButtons.YesNo);
+            if (selectedStudentId == 0) return;
+            var confirm = MessageBox.Show("Are you sure to delete this student?", "Confirm", MessageBoxButtons.YesNo);
             if (confirm == DialogResult.Yes)
             {
                 _studentController.DeleteStudent(selectedStudentId);
@@ -368,11 +304,11 @@ namespace UnicomTIC_Management.Views
                 return false;
             }
 
-            //if (cmbSubGroup.SelectedValue == null)
-            //{
-                //MessageBox.Show("Please select Sub Group.");
-               // return false;
-            //}
+            if (cmbSubGroup.SelectedValue == null)
+            {
+                MessageBox.Show("Please select Sub Group.");
+               return false;
+            }
 
             return true;
 
@@ -387,9 +323,8 @@ namespace UnicomTIC_Management.Views
             txtEmail.Clear();
             cmbGender.SelectedIndex = -1;
             cmbCourse.SelectedIndex = -1;
-            //cmbSubject.DataSource = null;
-            cmbMainGroup.SelectedIndex = -1;
-           
+            cmbMainGroup.DataSource = null;
+            cmbSubGroup.DataSource = null;
             dtpDOB.Value = DateTime.Now;
         }
 

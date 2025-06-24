@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Services.Interfaces;
+using UnicomTIC_Management.Utilities;
 
 namespace UnicomTIC_Management.Controllers
 {
     internal class LecturerController
     {
         private readonly ILecturerService _service;
+
 
         public LecturerController(ILecturerService service)
         {
@@ -64,5 +66,11 @@ namespace UnicomTIC_Management.Controllers
         {
             return _service.GetAllLecturers();
         }
+        public LecturerDTO GetLecturerByUserId(int userId)
+        {
+            var lecturer = _service.GetLecturerByUserId(userId);
+            return LecturerMapper.ToDTO(lecturer); // ✅ Static method call
+        }
+
     }
 }

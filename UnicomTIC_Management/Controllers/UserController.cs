@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using UnicomTIC_Management.Models;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Models.Enums;
 using UnicomTIC_Management.Services.Interfaces;
 
 namespace UnicomTIC_Management.Controllers
 {
-    public class UserController
+    internal class UserController
     {
 
         private readonly IUserService _userService;
@@ -16,6 +17,7 @@ namespace UnicomTIC_Management.Controllers
         {
             _userService = userService;
         }
+
         // Create user after validating admin credentials
         public int CreateUser(UserDTO newUser)
         {
@@ -71,6 +73,11 @@ namespace UnicomTIC_Management.Controllers
                 return false; // or true, depending on your default policy
             }
         }
+        public User Login(string username, string password)
+        {
+            return _userService.ValidateLogin(username, password);
+        }
+
 
         /*internal int CreateUser(UserDTO pendingUser)
         {

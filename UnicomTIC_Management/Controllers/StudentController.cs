@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Services;
 using UnicomTIC_Management.Services.Interfaces;
 
 namespace UnicomTIC_Management.Controllers
@@ -15,7 +16,7 @@ namespace UnicomTIC_Management.Controllers
             _service = service;
         }
 
-        // Adds a new student and returns the new student ID
+      
         public int AddStudent(StudentDTO studentDTO)
         {
             try
@@ -80,5 +81,10 @@ namespace UnicomTIC_Management.Controllers
                 return new List<StudentDTO>();
             }
         }
+        public StudentDTO GetStudentByUserId(int userId)
+        {
+            return _service.GetStudentByUserId(userId);
+        }
+
     }
 }

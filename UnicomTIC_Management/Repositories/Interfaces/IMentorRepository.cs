@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UnicomTIC_Management.Models;
+using UnicomTIC_Management.Models.DTOs;
 
 namespace UnicomTIC_Management.Repositories.Interfaces
 {
@@ -14,5 +15,6 @@ namespace UnicomTIC_Management.Repositories.Interfaces
         void DeleteMentor(int mentorId);
         Mentor GetMentorById(int mentorId);
         List<Mentor> GetAllMentors();
+        MentorDTO GetMentorByUserId(int userId);
     }
 }

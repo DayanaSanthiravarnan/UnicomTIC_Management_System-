@@ -15,5 +15,6 @@ namespace UnicomTIC_Management.Services.Interfaces
         void DeleteStudent(int studentId);
         StudentDTO GetStudentById(int studentId);
         List<StudentDTO> GetAllStudents();
+        StudentDTO GetStudentByUserId(int userId);
     }
 }

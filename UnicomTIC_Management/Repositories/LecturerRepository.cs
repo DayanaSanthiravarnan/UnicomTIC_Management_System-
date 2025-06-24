@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Data.SQLite;
 using UnicomTIC_Management.Datas;
 using UnicomTIC_Management.Models;
+using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Models.Enums;
 using UnicomTIC_Management.Repositories.Interfaces;
 
 namespace UnicomTIC_Management.Repositories
@@ -25,7 +27,7 @@ namespace UnicomTIC_Management.Repositories
                 cmd.Parameters.AddWithValue("@Phone", lecturer.Phone ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@Address", lecturer.Address ?? (object)DBNull.Value);
                 cmd.Parameters.AddWithValue("@Email", lecturer.Email ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@DepartmentID", lecturer.DepartmentID.HasValue ? (object)lecturer.DepartmentID.Value : DBNull.Value);
+                cmd.Parameters.AddWithValue("@DepartmentID", lecturer.DepartmentID);
                 cmd.Parameters.AddWithValue("@CreatedAt", lecturer.CreatedAt);
                 cmd.Parameters.AddWithValue("@UpdatedAt", lecturer.UpdatedAt);
 
@@ -133,6 +135,46 @@ namespace UnicomTIC_Management.Repositories
                 }
             }
             return lecturers;
+        }
+        public Lecturer GetLecturerByUserId(int userId)
+        {
+            Lecturer lecturer = null;
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = @"
+            SELECT l.*, d.DepartmentName, u.Username 
+            FROM Lecturers l
+            LEFT JOIN Departments d ON l.DepartmentID = d.DepartmentID
+            LEFT JOIN Users u ON l.UserID = u.UserID
+            WHERE l.UserID = @UserID";
+
+                cmd.Parameters.AddWithValue("@UserID", userId);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new Lecturer
+                        {
+                            LecturerID = reader.GetInt32(reader.GetOrdinal("LecturerID")),
+                            Name = reader["Name"].ToString(),
+                            NIC = reader["NIC"].ToString(),
+                            Phone = reader["Phone"].ToString(),
+                            Address = reader["Address"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            DepartmentID = reader["DepartmentID"] != DBNull.Value ? Convert.ToInt32(reader["DepartmentID"]) : (int?)null,
+                            DepartmentName = reader["DepartmentName"]?.ToString(),
+                            UserID = Convert.ToInt32(reader["UserID"]),
+                           
+                            CreatedAt = DateTime.Parse(reader["CreatedAt"].ToString()),
+                            UpdatedAt = DateTime.Parse(reader["UpdatedAt"].ToString())
+                        };
+                    }
+                }
+            }
+
+            return lecturer;
         }
     }
 }

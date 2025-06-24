@@ -209,5 +209,10 @@ namespace UnicomTIC_Management.Views
         {
 
         }
+
+        private void SubjectForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

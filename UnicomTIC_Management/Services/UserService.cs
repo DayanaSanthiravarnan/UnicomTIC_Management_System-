@@ -102,6 +102,10 @@ namespace UnicomTIC_Management.Services
 
             return _repository.DoesUsernameExist(username);
         }
+        public User ValidateLogin(string username, string password)
+        {
+            return _repository.GetUserByUsernameAndPassword(username, password);
+        }
 
     }
 

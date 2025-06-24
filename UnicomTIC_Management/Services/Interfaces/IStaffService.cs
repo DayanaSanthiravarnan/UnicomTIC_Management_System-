@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnicomTIC_Management.Models;
 using UnicomTIC_Management.Models.DTOs;
 
 namespace UnicomTIC_Management.Services.Interfaces
@@ -14,5 +15,6 @@ namespace UnicomTIC_Management.Services.Interfaces
         void DeleteStaff(int staffId);
         StaffDTO GetStaffById(int staffId);
         List<StaffDTO> GetAllStaff();
+        Staff GetStaffByUserId(int userId);
     }
 }

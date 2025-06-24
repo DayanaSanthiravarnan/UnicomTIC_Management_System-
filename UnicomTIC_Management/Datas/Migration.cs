@@ -16,8 +16,7 @@ namespace UnicomTIC_Management.Datas
 
                 cmd.CommandText = @"
                     PRAGMA foreign_keys = ON;
-                    ALTER TABLE Timetables ADD COLUMN StartTime TEXT;
-ALTER TABLE Timetables ADD COLUMN EndTime TEXT;
+                    
               
                     CREATE TABLE IF NOT EXISTS NICDetails (
                         NIC TEXT PRIMARY KEY NOT NULL,
@@ -232,28 +231,26 @@ ALTER TABLE Timetables ADD COLUMN EndTime TEXT;
                         FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID)
                     );
 
-                    CREATE TABLE IF NOT EXISTS Marks (
+                  CREATE TABLE IF NOT EXISTS Marks (
                         MarkID INTEGER PRIMARY KEY AUTOINCREMENT,
                         StudentID INTEGER NOT NULL,
                         SubjectID INTEGER NOT NULL,
                         ExamID INTEGER NOT NULL,
                         MarksObtained INTEGER NOT NULL,
-                        GradedByLecturerID INTEGER,
                         Grade TEXT,
-                        EntryDate TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
                         FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
                         FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID),
-                        FOREIGN KEY (ExamID) REFERENCES Exams(ExamID),
-                        FOREIGN KEY (GradedByLecturerID) REFERENCES Lecturers(LecturerID)
+                        FOREIGN KEY (ExamID) REFERENCES Exams(ExamID)
                     );
-
-                    CREATE TABLE IF NOT EXISTS TopPerformers (
+                  CREATE TABLE IF NOT EXISTS TopPerformers (
                         TopPerformerID INTEGER PRIMARY KEY AUTOINCREMENT,
                         StudentID INTEGER NOT NULL,
-                        GPA REAL NOT NULL,
-                        Term TEXT NOT NULL,
-                        AcademicYear TEXT NOT NULL,
-                        FOREIGN KEY (StudentID) REFERENCES Students(StudentID)
+                        ExamID INTEGER NOT NULL,
+                        MarksObtained INTEGER NOT NULL,
+                        Grade TEXT,
+                        RecordedDate TEXT NOT NULL,
+                        FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+                        FOREIGN KEY (ExamID) REFERENCES Exams(ExamID)
                     );
 
                     CREATE TABLE IF NOT EXISTS Assignments (
@@ -285,8 +282,7 @@ ALTER TABLE Timetables ADD COLUMN EndTime TEXT;
                         RoomID INTEGER PRIMARY KEY AUTOINCREMENT,
                         RoomName TEXT NOT NULL
                     );
-
-                                      CREATE TABLE IF NOT EXISTS Timetables (
+                    CREATE TABLE IF NOT EXISTS Timetables (
                         TimetableID INTEGER PRIMARY KEY AUTOINCREMENT,
                         CourseID INTEGER NOT NULL,
                         SubjectID INTEGER NOT NULL,
@@ -294,12 +290,11 @@ ALTER TABLE Timetables ADD COLUMN EndTime TEXT;
                         RoomID INTEGER NOT NULL,
                         SlotID INTEGER NOT NULL,
                         MainGroupID INTEGER NOT NULL,
-                        SubGroupID INTEGER,
+                        SubGroupID INTEGER ,
                         DayOfWeek TEXT NOT NULL,
                         AcademicYear TEXT NOT NULL,
                         Semester TEXT NOT NULL,
-                        StartTime TEXT,
-                        EndTime TEXT,
+                        CreatedAt TEXT NOT NULL DEFAULT (datetime('now')),
                         FOREIGN KEY (CourseID) REFERENCES Courses(CourseID),
                         FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID),
                         FOREIGN KEY (LecturerID) REFERENCES Lecturers(LecturerID),
@@ -308,17 +303,15 @@ ALTER TABLE Timetables ADD COLUMN EndTime TEXT;
                         FOREIGN KEY (MainGroupID) REFERENCES MainGroups(MainGroupID),
                         FOREIGN KEY (SubGroupID) REFERENCES SubGroups(SubGroupID)
                     );
-                    CREATE TABLE IF NOT EXISTS Attendance (
-                        AttendanceID INTEGER PRIMARY KEY AUTOINCREMENT,
-                        StudentID INTEGER NOT NULL,
-                        SubjectID INTEGER NOT NULL,
-                        Date TEXT NOT NULL,
-                        TimeSlot TEXT,
-                        Status TEXT NOT NULL CHECK (Status IN ('Present', 'Absent', 'Late', 'Excused')),
-                        FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
-                        FOREIGN KEY (SubjectID) REFERENCES Subjects(SubjectID),
-                        UNIQUE (StudentID, SubjectID, Date, TimeSlot)
-                    );
+                   CREATE TABLE IF NOT EXISTS Attendance (
+                    AttendanceID INTEGER PRIMARY KEY AUTOINCREMENT,
+                    StudentID INTEGER NOT NULL,
+                    Date TEXT NOT NULL,
+                    TimeSlot TEXT, -- Optional: Morning, Afternoon, etc.
+                    Status TEXT NOT NULL CHECK (Status IN ('Present', 'Absent', 'Late', 'Excused')),
+                    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+                    UNIQUE (StudentID, Date, TimeSlot) -- Ensure only one entry per student per date+slot
+                );
 
                   
 

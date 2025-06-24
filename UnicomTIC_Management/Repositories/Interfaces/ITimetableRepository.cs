@@ -23,5 +23,6 @@ namespace UnicomTIC_Management.Repositories.Interfaces
 
         // Conflict check
         bool IsSlotOccupied(TimetableDTO dto, int? ignoreTimetableId = null);
+         List<TimetableDTO> GetTimetableByGroup(int mainGroupId, int? subGroupId);
     }
 }

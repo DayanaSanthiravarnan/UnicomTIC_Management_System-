@@ -8,7 +8,9 @@ using UnicomTIC_Management.Datas;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Models.Enums;
 using UnicomTIC_Management.Repositories;
+using UnicomTIC_Management.Repositories.Interfaces;
 using UnicomTIC_Management.Services;
+using UnicomTIC_Management.Services.Interfaces;
 using UnicomTIC_Management.Views;
 
 namespace UnicomTIC_Management
@@ -32,7 +34,8 @@ namespace UnicomTIC_Management
             var userRepository = new UserRepository();
             var subGroupRepository = new SubGroupRepository();
             var subjectRepository = new SubjectRepository();
-
+            var marksRepository = new MarksRepository();
+            var examRepository = new ExamRepository();
             // Initialize services
             var studentService = new StudentService(studentRepository);
             var courseService = new CourseService(courseRepository);
@@ -40,7 +43,8 @@ namespace UnicomTIC_Management
             var userService = new UserService(userRepository);
             var subGroupService = new SubGroupService(subGroupRepository);
             var subjectService = new SubjectService(subjectRepository);
-
+            var marksService = new MarksService(marksRepository);
+            var examService = new ExamService(examRepository, subjectService);
             // Initialize controllers
             var studentController = new StudentController(studentService);
             var courseController = new CourseController(courseService);
@@ -48,6 +52,7 @@ namespace UnicomTIC_Management
             var userController = new UserController(userService);
             var subGroupController = new SubGroupController(subGroupService);
             var subjectController = new SubjectController(subjectService);
+            var examController = new ExamController(examService);
 
             // Create dummy pending user and student for demonstration
             var pendingUser = new UserDTO
@@ -76,13 +81,25 @@ namespace UnicomTIC_Management
             //   pendingUser,
             // pendingStudent
             // ));
-            
-            Application.Run(new TimetableForm()
+            var attendanceRepository = new AttendanceRepository();
+            var attendanceService = new AttendanceService(attendanceRepository);
+            var attendanceController = new AttendanceController(attendanceService);
+            var marksController = new MarksController(marksService);
+            // Application.Run(new AttendanceForm(attendanceController, studentController));
 
-           );
-            
+
+            ///Application.Run(new AttendanceForm()
+
+            //Application.Run(new MarksForm(marksController, studentController, subjectController, examController));
+            //Application.Run(new ExamForm());
+            Application.Run(new LoginForm());
+            // Application.Run(new StudentDetailsForm( studentController,
+           // courseController,
+                                //   mainGroupController, subGroupController));
         }
+
+    }
     }
         
-}
+
 

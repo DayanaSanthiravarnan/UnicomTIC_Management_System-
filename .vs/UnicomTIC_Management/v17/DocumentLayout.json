@@ -1,0 +1,1549 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "Z:\\C#\\final\\UnicomTIC_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\lecturerdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\lecturerdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\timetablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\timetablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|z:\\c#\\final\\unicomtic_management\\unicomtic_management\\utilities\\subgroupmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\utilities\\subgroupmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|z:\\c#\\final\\unicomtic_management\\unicomtic_management\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|z:\\c#\\final\\unicomtic_management\\unicomtic_management\\repositories\\nicdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\nicdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|z:\\c#\\final\\unicomtic_management\\unicomtic_management\\datas\\migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\datas\\migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|z:\\c#\\final\\unicomtic_management\\unicomtic_management\\views\\adminviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\adminviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\adminviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\adminviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\roleregistationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\roleregistationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\roleregistationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\roleregistationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\roleregistationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\roleregistationform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\roleregistationform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\roleregistationform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\createaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\createaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\adminviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\adminviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\studentdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\studentdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\adminviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\adminviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\studentdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\studentdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\mentorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\mentorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\imentorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\imentorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\mentorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\mentorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\interfaces\\imentorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\interfaces\\imentorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\imarkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\imarkrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\mentorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\mentorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\dtos\\mentordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\dtos\\mentordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\mentorviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\mentorviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\mentorviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\mentorviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\mentorviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\mentorviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\mentorviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\mentorviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffregiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffregiform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\studentviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\studentviewform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\studentviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\studentviewform.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\dtos\\staffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\dtos\\staffdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\dtos\\departmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\staffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\interfaces\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\interfaces\\istaffservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\lecturerregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\lecturerregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\lecturerregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\lecturerregistrationform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\lecturerdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\lecturerdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\lecturercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\lecturerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\lecturerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\lecturerviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\lecturerviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\lecturerviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\lecturerviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\utilities\\lecturermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\utilities\\lecturermapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\lecturerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\lecturerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\ilecturerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\ilecturerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\studentviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\studentviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\timetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\timetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\studentviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\studentviewform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\timetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\timetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\interfaces\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\mentordetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\mentordetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\itimetablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\itimetablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\interfaces\\itimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\interfaces\\itimetableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\controllers\\timetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\controllers\\timetablecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\userdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\userdetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\timeslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\timeslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\timeslotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\interfaces\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\subjectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\subjectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\timetableform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\itimeslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\itimeslotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\subjectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\subjectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\repositories\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\enums\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\utilities\\timetablemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\utilities\\timetablemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\mentordetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\mentordetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\mentor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\mentor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\views\\staffdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\views\\staffdetailform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|Z:\\C#\\final\\UnicomTIC_Management\\unicomtic_management\\models\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6621B11C-693A-4114-8FBF-AD77229EC4B6}|UnicomTIC_Management\\UnicomTIC_Management.csproj|solutionrelative:unicomtic_management\\models\\dtos\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 242,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SubGroupMapper.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Utilities\\SubGroupMapper.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Utilities\\SubGroupMapper.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Utilities\\SubGroupMapper.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Utilities\\SubGroupMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:44:55.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\DepartmentService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\DepartmentService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:43:28.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NICDetailRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\NICDetailRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\NICDetailRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\NICDetailRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\NICDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:42:13.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Migration.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Datas\\Migration.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Datas\\Migration.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Datas\\Migration.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Datas\\Migration.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:41:28.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LoginForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LoginForm.cs [Design]",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:23:11.937Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LoginForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LoginForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\LoginForm.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAFAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:23:39.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StaffRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\StaffRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\StaffRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\StaffRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\StaffRepository.cs",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAUwIAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:20:52.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimetableRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\TimetableRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\TimetableRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\TimetableRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\TimetableRepository.cs",
+              "ViewState": "AQIAACMBAAAAAAAAAAAtwCwBAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:55:17.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LecturerDetailsForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerDetailsForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LecturerDetailsForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerDetailsForm.cs [Design]",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\LecturerDetailsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:19:21.958Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoleRegistationForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\RoleRegistationForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:12:59.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\StudentController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:55:03.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RoleRegistationForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\RoleRegistationForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\RoleRegistationForm.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAcwA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:13:03.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\UserRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:24:58.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RoleRegistationForm.resx",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.resx",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\RoleRegistationForm.resx",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.resx",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\RoleRegistationForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-24T07:17:26.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RoleRegistationForm.Designer.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.Designer.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\RoleRegistationForm.Designer.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\RoleRegistationForm.Designer.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\RoleRegistationForm.Designer.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwAcBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:17:26.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminViewForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\AdminViewForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.cs [Design]",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\AdminViewForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:32:57.908Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdminViewForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\AdminViewForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\AdminViewForm.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAD8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:49:38.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CreateAccountForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\CreateAccountForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\CreateAccountForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\CreateAccountForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\CreateAccountForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T07:12:46.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "StudentDetailsForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentDetailsForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StudentDetailsForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentDetailsForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StudentDetailsForm.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAADwvyUAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:52:38.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "packages.config",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\packages.config",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\packages.config",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\packages.config",
+              "RelativeToolTip": "UnicomTIC_Management\\packages.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-24T07:00:05.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminViewForm.Designer.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.Designer.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\AdminViewForm.Designer.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.Designer.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\AdminViewForm.Designer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAMBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:45:27.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminViewForm.resx",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.resx",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\AdminViewForm.resx",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\AdminViewForm.resx",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\AdminViewForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-24T06:45:28.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Program.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Program.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Program.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Program.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAgwFcAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:45:56.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MentorService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\MentorService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\MentorService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\MentorService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\MentorService.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAjwD8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:25:52.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IMentorRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IMentorRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\IMentorRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IMentorRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\IMentorRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:27:09.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IMentorService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IMentorService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\Interfaces\\IMentorService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IMentorService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\Interfaces\\IMentorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:25:35.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IMarkRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IMarkRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\IMarkRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IMarkRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\IMarkRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:25:27.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StudentDetailsForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentDetailsForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StudentDetailsForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentDetailsForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentDetailsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:06:51.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MentorController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\MentorController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\MentorController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\MentorController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\MentorController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAcwFYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:25:06.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MentorViewForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\MentorViewForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\MentorViewForm.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAUwDMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:21:15.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "MentorViewForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\MentorViewForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:20:55.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "StaffRegiForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffRegiForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffRegiForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffRegiForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffRegiForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:20:36.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IStaffRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IStaffRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\IStaffRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IStaffRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\IStaffRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:27:28.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MentorRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\MentorRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\MentorRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\MentorRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\MentorRepository.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAqwIMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:48:16.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "StaffViewForm.resx",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.resx",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffViewForm.resx",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.resx",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StaffViewForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-24T06:15:25.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "StaffDetailForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffDetailForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffDetailForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffDetailForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffDetailForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:32:40.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "MentorViewForm.Designer.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.Designer.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\MentorViewForm.Designer.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.Designer.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\MentorViewForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:15:25.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "MentorDTO.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\MentorDTO.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\DTOs\\MentorDTO.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\MentorDTO.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\DTOs\\MentorDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:48:36.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "StaffViewForm.Designer.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.Designer.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffViewForm.Designer.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.Designer.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StaffViewForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:15:25.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MentorViewForm.resx",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.resx",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\MentorViewForm.resx",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorViewForm.resx",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\MentorViewForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-24T06:15:25.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "StudentViewForm.Designer.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.Designer.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StudentViewForm.Designer.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.Designer.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StudentViewForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T06:15:25.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DepartmentDTO.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\DepartmentDTO.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\DTOs\\DepartmentDTO.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\DepartmentDTO.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\DTOs\\DepartmentDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:29:13.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StaffViewForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffViewForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:22:07.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "StudentViewForm.resx",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.resx",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StudentViewForm.resx",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.resx",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StudentViewForm.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-06-24T06:15:25.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "StaffService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\StaffService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\StaffService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\StaffService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\StaffService.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwD0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:27:09.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IStaffService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IStaffService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\Interfaces\\IStaffService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IStaffService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\Interfaces\\IStaffService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:26:51.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\StaffController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\StaffController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:26:19.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "StaffViewForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffViewForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffViewForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StaffViewForm.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA7wB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:24:34.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "StaffDTO.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\StaffDTO.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\DTOs\\StaffDTO.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\StaffDTO.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\DTOs\\StaffDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:43:01.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Staff.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\Staff.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Staff.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\Staff.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:31:16.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "LecturerRegistrationForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAD4vzEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:19:31.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "LecturerRegistrationForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerRegistrationForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:19:30.411Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\IStudentRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IStudentRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\IStudentRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:27:24.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ILecturerRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\ILecturerRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\ILecturerRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\ILecturerRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\ILecturerRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:55:10.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\UserController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\UserController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\UserController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAIwBIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:35:46.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "LecturerViewForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LecturerViewForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerViewForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerViewForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:55:44.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "LecturerRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\LecturerRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\LecturerRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\LecturerRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\LecturerRepository.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAwLAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:54:24.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "LecturerViewForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LecturerViewForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerViewForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\LecturerViewForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:53:50.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "TimeTable.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\TimeTable.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\TimeTable.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\TimeTable.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\TimeTable.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAA4wBoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:18:51.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "LecturerDetailsForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerDetailsForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\LecturerDetailsForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\LecturerDetailsForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\LecturerDetailsForm.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAIAwwCwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:21:22.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "LecturerController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\LecturerController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\LecturerController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\LecturerController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\LecturerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:58:14.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "LecturerService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\LecturerService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\LecturerService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\LecturerService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\LecturerService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwDgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:59:05.894Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "LecturerMapper.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Utilities\\LecturerMapper.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Utilities\\LecturerMapper.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Utilities\\LecturerMapper.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Utilities\\LecturerMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:08:37.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "Submission.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Submission.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\Submission.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Submission.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\Submission.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:05:35.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:05:33.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ICourseService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\ICourseService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\Interfaces\\ICourseService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\ICourseService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\Interfaces\\ICourseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T04:05:31.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "StudentViewForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StudentViewForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StudentViewForm.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAASwFIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:44:13.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "UserDetailsForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\UserDetailsForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\UserDetailsForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\UserDetailsForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\UserDetailsForm.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowBAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:36:14.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "TimeSlotController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\TimeSlotController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\TimeSlotController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\TimeSlotController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\TimeSlotController.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:30:15.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "TimeSlotRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\TimeSlotRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\TimeSlotRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\TimeSlotRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\TimeSlotRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:27:56.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\StudentRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\StudentRepository.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAIwLoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:26:29.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "TimetableService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\TimetableService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\TimetableService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\TimetableService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\TimetableService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAA0wEQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:25:44.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "TimeSlotService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\TimeSlotService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\TimeSlotService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\TimeSlotService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\TimeSlotService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:25:14.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "ITimetableService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\ITimetableService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\Interfaces\\ITimetableService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\ITimetableService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\Interfaces\\ITimetableService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:24:20.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "StudentService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\StudentService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\StudentService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\StudentService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\StudentService.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAcwDgAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:23:57.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\Interfaces\\IStudentService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IStudentService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\Interfaces\\IStudentService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA9wBEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:23:19.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "TimetableController.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\TimetableController.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Controllers\\TimetableController.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Controllers\\TimetableController.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Controllers\\TimetableController.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:19:27.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "TimetableForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\TimetableForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\TimetableForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\TimetableForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\TimetableForm.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAUwJYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:00:44.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "TimetableForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\TimetableForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\TimetableForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\TimetableForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\TimetableForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T03:00:43.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "ITimetableRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\ITimetableRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\ITimetableRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\ITimetableRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\ITimetableRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowBgAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:55:12.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "ITimeSlotRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\ITimeSlotRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\ITimeSlotRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\ITimeSlotRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\ITimeSlotRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:55:10.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Student.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\Student.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Student.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:53:41.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "SubjectForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\SubjectForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\SubjectForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\SubjectForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\SubjectForm.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAmwBoAAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:49:01.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "SubjectForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\SubjectForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\SubjectForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\SubjectForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\SubjectForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:49:00.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:39:45.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Repositories\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Repositories\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:39:23.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Services\\UserService.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Services\\UserService.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Services\\UserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:38:26.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "User.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\User.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\User.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\User.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:34:56.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Enums\\UserRole.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\Enums\\UserRole.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Enums\\UserRole.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\Enums\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:34:48.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "StudentViewForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StudentViewForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StudentViewForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:19:06.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "TimetableMapper.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Utilities\\TimetableMapper.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Utilities\\TimetableMapper.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Utilities\\TimetableMapper.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Utilities\\TimetableMapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T02:16:00.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "MentorDetailForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorDetailForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\MentorDetailForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorDetailForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\MentorDetailForm.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAwE0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T13:00:01.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "MentorDetailForm.cs [Design]",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorDetailForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\MentorDetailForm.cs",
+              "ToolTip": "Z:\\C#\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorDetailForm.cs [Design]",
+              "RelativeToolTip": "..\\..\\OOP_Project\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\MentorDetailForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:52:38.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "Mentor.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Mentor.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\Mentor.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\Mentor.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\Mentor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:48:29.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "CourseDTO.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\CourseDTO.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Models\\DTOs\\CourseDTO.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Models\\DTOs\\CourseDTO.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Models\\DTOs\\CourseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:42:56.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "StaffDetailForm.cs",
+              "DocumentMoniker": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffDetailForm.cs",
+              "RelativeDocumentMoniker": "UnicomTIC_Management\\Views\\StaffDetailForm.cs",
+              "ToolTip": "Z:\\C#\\final\\UnicomTIC_Management\\UnicomTIC_Management\\Views\\StaffDetailForm.cs",
+              "RelativeToolTip": "UnicomTIC_Management\\Views\\StaffDetailForm.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T12:32:43.09Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

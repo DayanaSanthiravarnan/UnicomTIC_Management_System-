@@ -80,5 +80,10 @@ namespace UnicomTIC_Management.Controllers
                 return new List<MentorDTO>();
             }
         }
+
+        public MentorDTO GetMentorByUserId(int userId)
+        {
+            return _service.GetMentorByUserId(userId);
+        }
     }
 }

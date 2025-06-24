@@ -178,17 +178,17 @@ namespace UnicomTIC_Management.Views
         }
     
 
-        //private void ClearForm()
-        //{
-        //    txtUsername.Text = "";
-        //    txtPassword.Text = "";
-        //    txtName.Text = "";
-        //    txtNIC.Text = "";
-        //    txtPhone.Text = "";
-        //    txtAddress.Text = "";
-        //    txtEmail.Text = "";
+        private void ClearForm()
+        {
+           txtUsername.Text = "";
+           txtPassword.Text = "";
+          txtName.Text = "";
+            txtNIC.Text = "";
+           txtPhone.Text = "";
+           txtAddress.Text = "";
+           txtEmail.Text = "";
            
-        //}
+        }
 
     }
 }

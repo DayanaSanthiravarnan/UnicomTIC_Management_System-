@@ -125,6 +125,44 @@ namespace UnicomTIC_Management.Repositories
             }
             return staffs;
         }
+        public Staff GetStaffByUserId(int userId)
+        {
+            Staff staff = null;
+
+            using (var connection = Dbconfig.GetConnection())
+            {
+                var cmd = connection.CreateCommand();
+
+                // Change 'Staffs' to the actual table name in your DB, e.g. 'Staff'
+                cmd.CommandText = @"
+            SELECT s.StaffID, s.Name, s.NIC, s.DepartmentID, s.ContactNo, s.Email, s.UserID, s.CreatedAt, s.UpdatedAt, d.Name as DepartmentName
+            FROM Staff s
+            LEFT JOIN Departments d ON s.DepartmentID = d.DepartmentID
+            WHERE s.UserID = @UserID";
+
+                cmd.Parameters.AddWithValue("@UserID", userId);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        staff = new Staff();
+                        staff.StaffID = Convert.ToInt32(reader["StaffID"]);
+                        staff.Name = reader["Name"].ToString();
+                        staff.NIC = reader["NIC"].ToString();
+                        staff.DepartmentID = reader["DepartmentID"] != DBNull.Value ? Convert.ToInt32(reader["DepartmentID"]) : (int?)null;
+                        staff.ContactNo = reader["ContactNo"].ToString();
+                        staff.Email = reader["Email"].ToString();
+                        staff.UserID = Convert.ToInt32(reader["UserID"]);
+                        staff.CreatedAt = Convert.ToDateTime(reader["CreatedAt"]);
+                        staff.UpdatedAt = Convert.ToDateTime(reader["UpdatedAt"]);
+                        staff.DepartmentName = reader["DepartmentName"].ToString();
+                    }
+                }
+            }
+
+            return staff;
+        }
     }
 }
 

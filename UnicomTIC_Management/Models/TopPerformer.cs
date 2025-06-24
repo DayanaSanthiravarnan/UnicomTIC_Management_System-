@@ -8,10 +8,15 @@ namespace UnicomTIC_Management.Models
 {
     internal class TopPerformer
     {
-        public int Id { get; set; }
+        public int TopPerformerID { get; set; }
         public int StudentID { get; set; }
-        public int SubjectID { get; set; }
-        public string Term  { get; set; }
-        public double GPA { get; set; }
+        public int ExamID { get; set; }
+        public int MarksObtained { get; set; }
+        public string Grade { get; set; }
+        public string RecordedDate { get; set; }
+
+        // Extra info for display
+        public string StudentName { get; set; }
+        public string ExamName { get; set; }
     }
 }

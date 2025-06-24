@@ -24,9 +24,12 @@ namespace UnicomTIC_Management.Utilities
                 Address = lecturer.Address,
                 Email = lecturer.Email,
                 DepartmentID = lecturer.DepartmentID,
+                DepartmentName = lecturer.DepartmentName,
                 UserID = lecturer.UserID,
+                
                 CreatedAt = lecturer.CreatedAt,
-                UpdatedAt = lecturer.UpdatedAt
+                UpdatedAt = lecturer.UpdatedAt,
+                Status = lecturer.Status
             };
         }
 

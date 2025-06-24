@@ -24,7 +24,9 @@ namespace UnicomTIC_Management.Utilities
                 Address = student.Address,
                 DateOfBirth = student.DateOfBirth,
                 EnrollmentDate = student.EnrollmentDate,
-                CourseID = student.CourseID
+                CourseID = student.CourseID,
+                MainGroupID = student.MainGroupID,
+                SubGroupID = student.SubGroupID
             };
         }
 
@@ -45,7 +47,9 @@ namespace UnicomTIC_Management.Utilities
                 Address = dto.Address,
                 DateOfBirth = dto.DateOfBirth,
                 EnrollmentDate = dto.EnrollmentDate,
-                CourseID = dto.CourseID
+                CourseID = dto.CourseID,
+                MainGroupID = dto.MainGroupID,
+                SubGroupID = dto.SubGroupID
             };
         }
 

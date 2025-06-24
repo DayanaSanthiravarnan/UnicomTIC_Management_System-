@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnicomTIC_Management.Models;
 using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Repositories.Interfaces;
 using UnicomTIC_Management.Services.Interfaces;
@@ -53,5 +54,10 @@ namespace UnicomTIC_Management.Services
             var lecturers = _repository.GetAllLecturers();
             return LecturerMapper.ToDTOList(lecturers);
         }
+        public Lecturer GetLecturerByUserId(int userId)
+        {
+            return _repository.GetLecturerByUserId(userId);
+        }
+
     }
 }

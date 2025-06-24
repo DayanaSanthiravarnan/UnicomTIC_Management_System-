@@ -51,12 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DepartmentController.cs" />
     <Compile Include="Controllers\ExamController.cs" />
     <Compile Include="Controllers\LecturerController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MainGroupController.cs" />
+    <Compile Include="Controllers\MarksController.cs" />
     <Compile Include="Controllers\MentorController.cs" />
     <Compile Include="Controllers\NICDetailController.cs" />
     <Compile Include="Controllers\RoomController.cs" />
@@ -66,9 +68,11 @@
     <Compile Include="Controllers\SubjectController.cs" />
     <Compile Include="Controllers\TimeSlotController.cs" />
     <Compile Include="Controllers\TimetableController.cs" />
+    <Compile Include="Controllers\TopPerformerController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Datas\Dbconfig.cs" />
     <Compile Include="Datas\Migration.cs" />
+    <Compile Include="Models\DTOs\AttendanceDTO.cs" />
     <Compile Include="Models\DTOs\DepartmentDTO.cs" />
     <Compile Include="Models\DTOs\ExamDTO.cs" />
     <Compile Include="Models\DTOs\LecturerDTO.cs" />
@@ -83,6 +87,7 @@
     <Compile Include="Models\DTOs\SubjectDTO.cs" />
     <Compile Include="Models\DTOs\TimeSlotDTO.cs" />
     <Compile Include="Models\DTOs\TimetableDTO.cs" />
+    <Compile Include="Models\DTOs\TopPerformerDTO.cs" />
     <Compile Include="Models\DTOs\UserDTO.cs" />
     <Compile Include="Models\Enums\UserStatus.cs" />
     <Compile Include="Models\MainGroup.cs" />
@@ -90,12 +95,15 @@
     <Compile Include="Models\SubGroup.cs" />
     <Compile Include="Models\TimeSlot.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Repositories\AttendanceRepository.cs" />
     <Compile Include="Repositories\DepartmentRepository.cs" />
     <Compile Include="Repositories\ExamRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IAttendanceRepository.cs" />
     <Compile Include="Repositories\Interfaces\IDepartmentRepository.cs" />
     <Compile Include="Repositories\Interfaces\IExamRepository.cs" />
     <Compile Include="Repositories\Interfaces\ILecturerRepository.cs" />
     <Compile Include="Repositories\Interfaces\IMainGroupRepository.cs" />
+    <Compile Include="Repositories\Interfaces\IMarkRepository.cs" />
     <Compile Include="Repositories\Interfaces\IMentorRepository.cs" />
     <Compile Include="Repositories\Interfaces\INICDetailRepository.cs" />
     <Compile Include="Repositories\Interfaces\IRoomRepository.cs" />
@@ -105,9 +113,12 @@
     <Compile Include="Repositories\Interfaces\ISubjectRepository.cs" />
     <Compile Include="Repositories\Interfaces\ITimeSlotRepository.cs" />
     <Compile Include="Repositories\Interfaces\ITimetableRepository.cs" />
+    <Compile Include="Repositories\Interfaces\ITopPerformerRepository.cs" />
     <Compile Include="Repositories\Interfaces\IUserRepository.cs" />
+    <Compile Include="Repositories\TopPerformerRepository.cs" />
     <Compile Include="Repositories\LecturerRepository.cs" />
     <Compile Include="Repositories\MainGroupRepository.cs" />
+    <Compile Include="Repositories\MarkRepository.cs" />
     <Compile Include="Repositories\MentorRepository.cs" />
     <Compile Include="Repositories\NICDetailRepository.cs" />
     <Compile Include="Repositories\RoomRepository.cs" />
@@ -118,14 +129,20 @@
     <Compile Include="Repositories\TimeSlotRepository.cs" />
     <Compile Include="Repositories\TimetableRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Services\AttendanceService.cs" />
     <Compile Include="Services\DepartmentService.cs" />
     <Compile Include="Services\ExamService.cs" />
+    <Compile Include="Services\Interfaces\ITopPerformerService.cs" />
+    <Compile Include="Services\MarksService.cs" />
+    <Compile Include="Services\Interfaces\IAttendanceService.cs" />
     <Compile Include="Services\Interfaces\IDepartmentService.cs" />
     <Compile Include="Services\Interfaces\IExamService.cs" />
     <Compile Include="Services\Interfaces\ILecturerService.cs" />
     <Compile Include="Services\Interfaces\IMainGroupService.cs" />
+    <Compile Include="Services\Interfaces\IMarksService.cs" />
     <Compile Include="Services\Interfaces\IMentorService.cs" />
     <Compile Include="Services\Interfaces\INICDetailService.cs" />
+    <Compile Include="Services\Interfaces\Interface1.cs" />
     <Compile Include="Services\Interfaces\IRoomService.cs" />
     <Compile Include="Services\Interfaces\IStaffService.cs" />
     <Compile Include="Services\Interfaces\IStudentService.cs" />
@@ -145,11 +162,14 @@
     <Compile Include="Services\SubjectService.cs" />
     <Compile Include="Services\TimeSlotService.cs" />
     <Compile Include="Services\TimetableService.cs" />
+    <Compile Include="Services\TopPerformerService.cs" />
     <Compile Include="Services\UserService.cs" />
+    <Compile Include="Utilities\AttendanceMapper.cs" />
     <Compile Include="Utilities\DepartmentMapper.cs" />
     <Compile Include="Utilities\ExamMapper.cs" />
     <Compile Include="Utilities\LecturerMapper.cs" />
     <Compile Include="Utilities\MainGroupMapper.cs" />
+    <Compile Include="Utilities\MarksMapper.cs" />
     <Compile Include="Utilities\MentorMapper.cs" />
     <Compile Include="Utilities\NICDetailMapper.cs" />
     <Compile Include="Utilities\RoomMapper.cs" />
@@ -159,7 +179,26 @@
     <Compile Include="Utilities\SubjectMapper.cs" />
     <Compile Include="Utilities\TimeSlotMapper.cs" />
     <Compile Include="Utilities\TimetableMapper.cs" />
+    <Compile Include="Utilities\TopPerformerMapper.cs" />
     <Compile Include="Utilities\UserMapper.cs" />
+    <Compile Include="Views\AdminViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminViewForm.Designer.cs">
+      <DependentUpon>AdminViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AttendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AttendanceForm.Designer.cs">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CreateAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\CreateAccountForm.Designer.cs">
+      <DependentUpon>CreateAccountForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DepartmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,11 +254,23 @@
     <Compile Include="Views\CourceForm.Designer.cs">
       <DependentUpon>CourceForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\LecturerDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LecturerDetailsForm.Designer.cs">
+      <DependentUpon>LecturerDetailsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LecturerRegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\LecturerRegistrationForm.Designer.cs">
       <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LecturerViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LecturerViewForm.Designer.cs">
+      <DependentUpon>LecturerViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
@@ -233,11 +284,29 @@
     <Compile Include="Views\MainGroupForm.Designer.cs">
       <DependentUpon>MainGroupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\MarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MarksForm.Designer.cs">
+      <DependentUpon>MarksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MentorDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MentorDetailForm.Designer.cs">
+      <DependentUpon>MentorDetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MentorRegiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\MentorRegiForm.Designer.cs">
       <DependentUpon>MentorRegiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MentorViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MentorViewForm.Designer.cs">
+      <DependentUpon>MentorViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\NICRegistrationForm.cs">
       <SubType>Form</SubType>
@@ -245,11 +314,11 @@
     <Compile Include="Views\NICRegistrationForm.Designer.cs">
       <DependentUpon>NICRegistrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\RoleSelectForm.cs">
+    <Compile Include="Views\RoleRegistationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\RoleSelectForm.Designer.cs">
-      <DependentUpon>RoleSelectForm.cs</DependentUpon>
+    <Compile Include="Views\RoleRegistationForm.Designer.cs">
+      <DependentUpon>RoleRegistationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\RoomManagementForm.cs">
       <SubType>Form</SubType>
@@ -257,11 +326,23 @@
     <Compile Include="Views\RoomManagementForm.Designer.cs">
       <DependentUpon>RoomManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\StaffDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StaffDetailForm.Designer.cs">
+      <DependentUpon>StaffDetailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\StaffRegiForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\StaffRegiForm.Designer.cs">
       <DependentUpon>StaffRegiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StaffViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StaffViewForm.Designer.cs">
+      <DependentUpon>StaffViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\StudentDetailsForm.cs">
       <SubType>Form</SubType>
@@ -274,6 +355,12 @@
     </Compile>
     <Compile Include="Views\StudentRegiForm.Designer.cs">
       <DependentUpon>StudentRegiForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\StudentViewForm.Designer.cs">
+      <DependentUpon>StudentViewForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\SubGroupForm.cs">
       <SubType>Form</SubType>
@@ -299,6 +386,12 @@
     <Compile Include="Views\TimetableForm.Designer.cs">
       <DependentUpon>TimetableForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\TopPerformerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TopPerformerForm.Designer.cs">
+      <DependentUpon>TopPerformerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +413,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AdminViewForm.resx">
+      <DependentUpon>AdminViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AttendanceForm.resx">
+      <DependentUpon>AttendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\CourceForm.resx">
       <DependentUpon>CourceForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -329,8 +428,14 @@
     <EmbeddedResource Include="Views\ExamForm.resx">
       <DependentUpon>ExamForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\LecturerDetailsForm.resx">
+      <DependentUpon>LecturerDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\LecturerRegistrationForm.resx">
       <DependentUpon>LecturerRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LecturerViewForm.resx">
+      <DependentUpon>LecturerViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -338,26 +443,44 @@
     <EmbeddedResource Include="Views\MainGroupForm.resx">
       <DependentUpon>MainGroupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\MarksForm.resx">
+      <DependentUpon>MarksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MentorDetailForm.resx">
+      <DependentUpon>MentorDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MentorRegiForm.resx">
       <DependentUpon>MentorRegiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MentorViewForm.resx">
+      <DependentUpon>MentorViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\NICRegistrationForm.resx">
       <DependentUpon>NICRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\RoleSelectForm.resx">
-      <DependentUpon>RoleSelectForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\RoleRegistationForm.resx">
+      <DependentUpon>RoleRegistationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RoomManagementForm.resx">
       <DependentUpon>RoomManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\StaffDetailForm.resx">
+      <DependentUpon>StaffDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\StaffRegiForm.resx">
       <DependentUpon>StaffRegiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StaffViewForm.resx">
+      <DependentUpon>StaffViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StudentDetailsForm.resx">
       <DependentUpon>StudentDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\StudentRegiForm.resx">
       <DependentUpon>StudentRegiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\StudentViewForm.resx">
+      <DependentUpon>StudentViewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\SubGroupForm.resx">
       <DependentUpon>SubGroupForm.cs</DependentUpon>
@@ -370,6 +493,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\TimetableForm.resx">
       <DependentUpon>TimetableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TopPerformerForm.resx">
+      <DependentUpon>TopPerformerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\UserDetailsForm.resx">
       <DependentUpon>UserDetailsForm.cs</DependentUpon>

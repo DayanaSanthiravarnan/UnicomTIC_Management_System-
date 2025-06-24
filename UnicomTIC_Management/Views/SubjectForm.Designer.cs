@@ -127,6 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SubjectForm";
             this.Text = "SubjectForm";
+            this.Load += new System.EventHandler(this.SubjectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.subjectdgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

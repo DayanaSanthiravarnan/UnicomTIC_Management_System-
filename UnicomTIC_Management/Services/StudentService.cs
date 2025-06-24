@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Repositories;
 using UnicomTIC_Management.Repositories.Interfaces;
 using UnicomTIC_Management.Services.Interfaces;
 using UnicomTIC_Management.Utilities;
@@ -50,6 +51,10 @@ namespace UnicomTIC_Management.Services
         {
             var students = _repository.GetAllStudents();
             return StudentMapper.ToDTOList(students);
+        }
+        public StudentDTO GetStudentByUserId(int userId)
+        {
+            return _repository.GetStudentByUserId(userId);
         }
     }
 }

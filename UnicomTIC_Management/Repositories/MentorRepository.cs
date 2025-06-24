@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnicomTIC_Management.Datas;
 using UnicomTIC_Management.Models;
+using UnicomTIC_Management.Models.DTOs;
 using UnicomTIC_Management.Repositories.Interfaces;
 
 namespace UnicomTIC_Management.Repositories
@@ -125,6 +126,43 @@ namespace UnicomTIC_Management.Repositories
                 }
             }
             return mentors;
+        }
+        public MentorDTO GetMentorByUserId(int userId)
+        {
+            using (var connection = Dbconfig.GetConnection())
+            {
+                connection.Open();
+                var cmd = connection.CreateCommand();
+                cmd.CommandText = @"
+            SELECT m.MentorID, m.Name, m.NIC, m.Phone, m.Email, m.DepartmentID, m.UserID, m.CreatedAt, m.UpdatedAt,
+                   d.Name AS DepartmentName
+            FROM Mentors m
+            LEFT JOIN Departments d ON m.DepartmentID = d.DepartmentID
+            WHERE m.UserID = @UserID";
+                cmd.Parameters.AddWithValue("@UserID", userId);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        return new MentorDTO
+                        {
+                            MentorID = Convert.ToInt32(reader["MentorID"]),
+                            Name = reader["Name"].ToString(),
+                            NIC = reader["NIC"].ToString(),
+                            Phone = reader["Phone"].ToString(),
+                            Email = reader["Email"].ToString(),
+                            DepartmentID = reader["DepartmentID"] as int? ?? 0,
+                            DepartmentName = reader["DepartmentName"]?.ToString(),
+                            UserID = Convert.ToInt32(reader["UserID"]),
+                            CreatedAt = Convert.ToDateTime(reader["CreatedAt"]),
+                            UpdatedAt = Convert.ToDateTime(reader["UpdatedAt"])
+                        };
+                    }
+                }
+            }
+
+            return null;
         }
     }
 

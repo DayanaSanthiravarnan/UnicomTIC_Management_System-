@@ -14,6 +14,7 @@ namespace UnicomTIC_Management.Services.Interfaces
         void DeleteMentor(int mentorId);
         MentorDTO GetMentorById(int mentorId);
         List<MentorDTO> GetAllMentors();
-       
+        MentorDTO GetMentorByUserId(int userId);
+
     }
 }

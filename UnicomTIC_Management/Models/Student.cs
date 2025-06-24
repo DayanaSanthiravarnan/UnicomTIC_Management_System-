@@ -21,8 +21,8 @@ namespace UnicomTIC_Management.Models
             public DateTime EnrollmentDate { get; set; }
             public int CourseID { get; set; }
             public int UserID { get; set; }
-            public int MainGroupID { get; set; }
-            public int SubGroupID { get; set; }
+            public int? MainGroupID { get; set; }
+            public int? SubGroupID { get; set; }
             public DateTime CreatedAt { get; set; }
             public DateTime UpdatedAt { get; set; }
         }

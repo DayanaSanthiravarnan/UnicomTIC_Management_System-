@@ -21,5 +21,6 @@ namespace UnicomTIC_Management.Services.Interfaces
         UserDTO GetUserByUsernameAndPassword(string username, string password);
         UserDTO ValidateUser(string username, string password);
         bool IsUsernameTaken(string username);
+        User ValidateLogin(string username, string password);
     }
 }

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Windows.Forms;
 using UnicomTIC_Management.Models.DTOs;
+using UnicomTIC_Management.Services;
 using UnicomTIC_Management.Services.Interfaces;
+using UnicomTIC_Management.Utilities;
 
 namespace UnicomTIC_Management.Controllers
 {
@@ -80,6 +82,11 @@ namespace UnicomTIC_Management.Controllers
                 MessageBox.Show($"Error retrieving staff list: {ex.Message}");
                 return new List<StaffDTO>();
             }
+        }
+        public StaffDTO GetStaffByUserId(int userId)
+        {
+            var staff = _service.GetStaffByUserId(userId); // service call
+            return staff != null ? StaffMapper.ToDTO(staff) : null;
         }
     }
 }

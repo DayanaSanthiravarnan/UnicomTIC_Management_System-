@@ -18,6 +18,8 @@ namespace UnicomTIC_Management.Services.Interfaces
         List<TimeTable> GetTimetablesByCourseId(int courseId);
         List<TimeTable> GetTimetablesByMainGroupId(int mainGroupId);
         bool IsSlotOccupied(TimetableDTO dto, int? ignoreTimetableId = null);
+        List<TimetableDTO> GetTimetableViewByGroup(int mainGroupId, int? subGroupId);
+
 
     }
 }

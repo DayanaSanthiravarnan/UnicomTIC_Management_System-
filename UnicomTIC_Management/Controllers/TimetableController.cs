@@ -84,5 +84,10 @@ namespace UnicomTIC_Management.Controllers
         {
             return _service.IsSlotOccupied(dto, ignoreTimetableId);
         }
+        public List<TimetableDTO> GetTimetableViewByGroup(int mainGroupId, int? subGroupId)
+        {
+            return _service.GetTimetableViewByGroup(mainGroupId, subGroupId);
+        }
+
     }
 }

@@ -18,6 +18,7 @@ namespace UnicomTIC_Management.Models
         public int UserID { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
+        public string DepartmentName { get; set; }
 
     }
 }

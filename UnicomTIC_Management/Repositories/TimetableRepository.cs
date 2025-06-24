@@ -243,5 +243,85 @@ namespace UnicomTIC_Management.Repositories
                 return count > 0;
             }
         }
+        public List<TimetableDTO> GetTimetableByGroup(int mainGroupId, int? subGroupId)
+        {
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = @"
+            SELECT * FROM Timetables 
+            WHERE MainGroupID = @MainGroupID
+            OR (SubGroupID IS NOT NULL AND SubGroupID = @SubGroupID)";
+
+                cmd.Parameters.AddWithValue("@MainGroupID", mainGroupId);
+                cmd.Parameters.AddWithValue("@SubGroupID", subGroupId.HasValue ? (object)subGroupId.Value : DBNull.Value);
+
+                var timetables = new List<TimetableDTO>();
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        timetables.Add(new TimetableDTO
+                        {
+                            // map timetable fields here
+                        });
+                    }
+                }
+                return timetables;
+            }
+        }
+        public List<TimetableDTO> GetTimetableViewByGroup(int mainGroupId, int? subGroupId)
+        {
+            var list = new List<TimetableDTO>();
+
+            using (var conn = Dbconfig.GetConnection())
+            {
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = @"
+            SELECT 
+                c.CourseName,
+                l.Name AS LecturerName,
+                r.RoomName,
+                t.Day,
+                ts.StartTime,
+                ts.EndTime,
+                mg.GroupName AS MainGroupName,
+                sg.GroupName AS SubGroupName
+            FROM Timetables t
+            JOIN Courses c ON t.CourseID = c.CourseID
+            JOIN Lecturers l ON t.LecturerID = l.LecturerID
+            JOIN Rooms r ON t.RoomID = r.RoomID
+            JOIN TimeSlots ts ON t.TimeSlotID = ts.TimeSlotID
+            JOIN MainGroups mg ON t.MainGroupID = mg.MainGroupID
+            LEFT JOIN SubGroups sg ON t.SubGroupID = sg.SubGroupID
+            WHERE t.MainGroupID = @MainGroupID
+              AND (@SubGroupID IS NULL OR t.SubGroupID = @SubGroupID)";
+
+                cmd.Parameters.AddWithValue("@MainGroupID", mainGroupId);
+                cmd.Parameters.AddWithValue("@SubGroupID", (object)subGroupId ?? DBNull.Value);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        list.Add(new TimetableDTO
+                        {
+                            CourseName = reader["CourseName"].ToString(),
+                            LecturerName = reader["LecturerName"].ToString(),
+                            RoomName = reader["RoomName"].ToString(),
+                            DayOfWeek = reader["Day"].ToString(),
+                            
+                            MainGroupName = reader["MainGroupName"].ToString(),
+                            SubGroupName = reader["SubGroupName"]?.ToString() ?? "N/A"
+                        });
+                    }
+                }
+            }
+
+            return list;
+        }
+
+
     }
+
 }

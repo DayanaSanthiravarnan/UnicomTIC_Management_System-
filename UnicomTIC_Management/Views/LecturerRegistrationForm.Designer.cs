@@ -44,7 +44,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.labelXYZ = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtName
@@ -179,21 +178,11 @@
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // labelXYZ
-            // 
-            this.labelXYZ.AutoSize = true;
-            this.labelXYZ.Location = new System.Drawing.Point(282, 287);
-            this.labelXYZ.Name = "labelXYZ";
-            this.labelXYZ.Size = new System.Drawing.Size(105, 13);
-            this.labelXYZ.TabIndex = 19;
-            this.labelXYZ.Text = "Labels for each field ";
-            // 
             // LecturerRegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelXYZ);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label8);
@@ -236,6 +225,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.Label labelXYZ;
     }
 }

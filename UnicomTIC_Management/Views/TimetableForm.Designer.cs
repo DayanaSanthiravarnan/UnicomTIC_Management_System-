@@ -57,8 +57,10 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.cmbSubGroup = new System.Windows.Forms.ComboBox();
-            this.cmbSlot = new System.Windows.Forms.ComboBox();
+            this.cmbStartSlot = new System.Windows.Forms.ComboBox();
             this.mbSlot = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTimetables)).BeginInit();
             this.SuspendLayout();
             // 
@@ -241,7 +243,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(383, 228);
+            this.btnClear.Location = new System.Drawing.Point(364, 228);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 20;
@@ -313,13 +315,13 @@
             this.cmbSubGroup.Size = new System.Drawing.Size(121, 21);
             this.cmbSubGroup.TabIndex = 29;
             // 
-            // cmbSlot
+            // cmbStartSlot
             // 
-            this.cmbSlot.FormattingEnabled = true;
-            this.cmbSlot.Location = new System.Drawing.Point(540, 120);
-            this.cmbSlot.Name = "cmbSlot";
-            this.cmbSlot.Size = new System.Drawing.Size(121, 21);
-            this.cmbSlot.TabIndex = 30;
+            this.cmbStartSlot.FormattingEnabled = true;
+            this.cmbStartSlot.Location = new System.Drawing.Point(540, 120);
+            this.cmbStartSlot.Name = "cmbStartSlot";
+            this.cmbStartSlot.Size = new System.Drawing.Size(121, 21);
+            this.cmbStartSlot.TabIndex = 30;
             // 
             // mbSlot
             // 
@@ -328,17 +330,38 @@
             this.mbSlot.Cursor = System.Windows.Forms.Cursors.Cross;
             this.mbSlot.Location = new System.Drawing.Point(462, 128);
             this.mbSlot.Name = "mbSlot";
-            this.mbSlot.Size = new System.Drawing.Size(30, 13);
+            this.mbSlot.Size = new System.Drawing.Size(51, 13);
             this.mbSlot.TabIndex = 31;
-            this.mbSlot.Text = "Time";
+            this.mbSlot.Text = "Start time";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(540, 147);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 32;
+            // 
+            // label13
+            // 
+            this.label13.AccessibleRole = System.Windows.Forms.AccessibleRole.Border;
+            this.label13.AutoSize = true;
+            this.label13.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.label13.Location = new System.Drawing.Point(462, 155);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(52, 13);
+            this.label13.TabIndex = 33;
+            this.label13.Text = " EndTime";
             // 
             // TimetableForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.mbSlot);
-            this.Controls.Add(this.cmbSlot);
+            this.Controls.Add(this.cmbStartSlot);
             this.Controls.Add(this.cmbSubGroup);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -364,9 +387,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtYear);
-            this.Controls.Add(this.dgvTimetables);
             this.Controls.Add(this.dtpStartTime);
             this.Controls.Add(this.cmbLecturer);
+            this.Controls.Add(this.dgvTimetables);
             this.Name = "TimetableForm";
             this.Text = "TimetableForm";
             this.Load += new System.EventHandler(this.TimetableForm_Load);
@@ -407,7 +430,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cmbSubGroup;
-        private System.Windows.Forms.ComboBox cmbSlot;
+        private System.Windows.Forms.ComboBox cmbStartSlot;
         private System.Windows.Forms.Label mbSlot;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label13;
     }
 }
